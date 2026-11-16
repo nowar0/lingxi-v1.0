@@ -1,0 +1,7 @@
+.work-menu-anchor { position:fixed; width:0; height:0; opacity:0; pointer-events:none; }
+.work-conversation-menu { z-index:80; width:285px; padding:7px; border-radius:16px; }
+.work-conversation-menu [role=menuitem] { min-height:36px; font-size:13px; gap:11px; }
+.work-conversation-menu [role=menuitem] > span { flex:1; }
+.work-conversation-menu [role=menuitem] > svg:last-child:not(:first-child) { margin-left:auto; width:13px; color:var(--muted-foreground); }
+.work-conversation-menu kbd { color:var(--muted-foreground); font:11px/1.4 inherit; margin-left:auto; white-space:nowrap; }
+.work-conversation-menu p { font-size:12px; padding:8px; overflow-wrap:anywhere; }

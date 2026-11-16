@@ -1,0 +1,15 @@
+{
+  "name": "lingxi-release-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "零汐发布工程工具（应用版本派生自src/pyproject.toml）",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/test_node_tools.cjs"
+  },
+  "dependencies": {
+    "resedit": "2.0.3"
+  }
+}

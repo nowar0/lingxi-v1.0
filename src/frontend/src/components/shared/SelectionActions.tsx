@@ -1,0 +1,22 @@
+import { useEffect, useRef, useState, type RefObject } from 'react'
+import { createPortal } from 'react-dom'
+import { toast } from 'sonner'
+import { api, json } from '@/api/client'
+import { lingxi } from '@/api/lingxi'
+import { useApp } from '@/context/AppContext'
+import { useMessageTokens } from '@/context/SurfaceContext'
+import type { Mode } from '@/types'
+import './selection-actions.css'
+
+export function SelectionActions({scrollRef,mode}:{scrollRef:RefObject<HTMLDivElement|null>;mode:Mode}){
+  const app=useApp(),tokens=useMessageTokens(),[selection,setSelection]=useState<{text:string;x:number;y:number}>(),[busy,setBusy]=useState(false)
+  const owner=useRef(true),lock=useRef(false),sid=mode==='work'?app.activeWorkSessionId:app.activeSessionId,live=useRef(sid);live.current=sid
+  useEffect(()=>{owner.current=true;return()=>{owner.current=false}},[])
+  useEffect(()=>{setSelection(undefined)},[sid])
+  useEffect(()=>{let timer:ReturnType<typeof setTimeout>;const update=()=>{clearTimeout(timer);timer=setTimeout(()=>{const value=window.getSelection();if(!value?.rangeCount||value.isCollapsed||document.querySelector('[data-image-editor]')){setSelection(undefined);return}const range=value.getRangeAt(0),parent=value.anchorNode?.parentElement;if(!scrollRef.current?.contains(range.commonAncestorContainer)||parent?.closest('input,textarea,[contenteditable=true]')){setSelection(undefined);return}const text=value.toString().trim();if(!text){setSelection(undefined);return}const box=range.getBoundingClientRect(),width=300;setSelection({text,x:Math.max(8,Math.min(innerWidth-width-8,box.left)),y:Math.max(8,box.top>52?box.top-46:Math.min(innerHeight-52,box.bottom+8))})},60)};const close=(e:KeyboardEvent)=>{if(e.key==='Escape')setSelection(undefined)};document.addEventListener('selectionchange',update);document.addEventListener('pointerup',update);document.addEventListener('keydown',close);const node=scrollRef.current;node?.addEventListener('scroll',update,{passive:true});return()=>{clearTimeout(timer);document.removeEventListener('selectionchange',update);document.removeEventListener('pointerup',update);document.removeEventListener('keydown',close);node?.removeEventListener('scroll',update)}},[scrollRef,sid])
+  if(!selection)return null
+  const quote=()=>{if(selection.text.length>4000)throw new Error('请将所选内容缩短至 4000 字以内');return selection.text.split('\n').map(line=>'> '+line).join('\n')}
+  const append=()=>{try{const text=[app.drafts[mode].trimEnd(),quote()].filter(Boolean).join('\n\n');if(text.length>8000)throw new Error('所选内容和草稿合计超过 8000 字');app.setDraft(mode,text);setSelection(undefined);window.getSelection()?.removeAllRanges();scrollRef.current?.closest('.workspace-chat,.companion-chat-panel,.chat-center')?.querySelector<HTMLTextAreaElement>('textarea[data-composer-mode]')?.focus();toast.success('已添加到输入框',{position:'top-center'})}catch(e){toast.error((e as Error).message)}}
+  const side=async()=>{if(lock.current||!sid)return;lock.current=true;setBusy(true);const captured=sid;try{const text=quote(),view=await api<{session_version:number}>(`/v3/sessions/${sid}/view?mode=work`);const result=await api<{session:{id:number}}>('/v9/workspace/side-chats',json('POST',{parent_session_id:sid,expected_version:view.session_version,inherit_record:true,request_id:crypto.randomUUID().replaceAll('-','')}));const draft=await lingxi.draft(result.session.id);const content=[draft.content.trimEnd(),text].filter(Boolean).join('\n\n');if(content.length>8000)throw new Error('侧聊草稿超过 8000 字');await lingxi.saveDraft(result.session.id,content,draft.revision);if(!owner.current||live.current!==captured)return;await app.refreshWorkSessions();window.dispatchEvent(new CustomEvent('lingxi-work-open-side',{detail:result.session.id}));setSelection(undefined);window.getSelection()?.removeAllRanges()}catch(e){if(owner.current)toast.error('侧聊未打开',{description:(e as Error).message})}finally{lock.current=false;if(owner.current)setBusy(false)}}
+  return createPortal(<div role="toolbar" aria-label="所选文字操作" data-ui-surface="message" className="selection-actions" style={{...tokens,left:selection.x,top:selection.y}} onMouseDown={event=>event.preventDefault()}><button type="button" disabled={busy} onClick={append}>添加到对话</button>{mode==='work'&&<button type="button" disabled={busy||app.connection!=='connected'||!sid} onClick={()=>void side()}>{busy?'正在打开…':'在侧边聊天中提问'}</button>}</div>,document.body)
+}

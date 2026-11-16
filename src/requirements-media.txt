@@ -1,0 +1,9 @@
+# Windows x64 CPython 3.14 media wheels only; exact upstream SHA-256 pins.
+# Run from this project root with the explicitly selected project venv.
+# This lock never installs FFmpeg; its separate redistribution review is blocked.
+--no-index
+--find-links ./打包工具/vendor-media/artifacts
+--only-binary :all:
+--require-hashes
+pillow==13.0.0 --hash=sha256:f7cbb7a64e7ec664775195e4f81923bc8a93d9451b963f844e59118f63147a7a
+pypdf==6.21.4 --hash=sha256:33e4fb41ca352810eb4e9838aa0d82d6888a5f8bf682f43e99cce5faa666255c

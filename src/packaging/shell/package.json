@@ -1,0 +1,9 @@
+{
+  "name": "lingxi",
+  "productName": "零汐",
+  "version": "1.0.0",
+  "description": "零汐 · 本地数字伙伴",
+  "main": "main.js",
+  "private": true,
+  "license": "UNLICENSED"
+}

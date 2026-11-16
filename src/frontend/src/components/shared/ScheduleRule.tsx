@@ -1,0 +1,9 @@
+import {useState} from 'react'
+import {Input} from '@/components/ui/input'
+import {Select} from '@/components/ui/select'
+export function ScheduleRule({value,onChange,disabled}:{value:string;onChange:(value:string)=>void;disabled?:boolean}){
+ const [custom,setCustom]=useState(false),parts=value.trim().split(/\s+/),simple=parts.length===5&&/^\d+$/.test(parts[0])&&/^\d+$/.test(parts[1])&&parts[2]==='*'&&parts[3]==='*'&&/^(\*|1-5|[0-6])$/.test(parts[4]);
+ const mode=!simple||custom?'custom':parts[4]==='*'?'daily':parts[4]==='1-5'?'weekdays':'weekly',time=simple?`${parts[1].padStart(2,'0')}:${parts[0].padStart(2,'0')}`:'09:00';
+ const change=(nextMode:string,nextTime=time,day='1')=>{if(nextMode==='custom'){setCustom(true);return}setCustom(false);const[h,m]=nextTime.split(':');onChange(`${Number(m)} ${Number(h)} * * ${nextMode==='daily'?'*':nextMode==='weekdays'?'1-5':day}`)};
+ return <div className="customer-fields"><label className="customer-field"><span>重复</span><Select aria-label="计划重复规则" disabled={disabled} value={mode} onChange={e=>change(e.target.value)}><option value="daily">每天</option><option value="weekdays">工作日</option><option value="weekly">每周</option><option value="custom">自定义规则</option></Select></label>{mode!=='custom'&&<label className="customer-field"><span>时间</span><Input aria-label="计划执行时间" type="time" disabled={disabled} value={time} onChange={e=>change(mode,e.target.value,parts[4])}/></label>}{mode==='weekly'&&<label className="customer-field"><span>星期</span><Select aria-label="计划星期" disabled={disabled} value={parts[4]} onChange={e=>change('weekly',time,e.target.value)}>{['日','一','二','三','四','五','六'].map((day,i)=><option key={i} value={String(i)}>星期{day}</option>)}</Select></label>}{mode==='custom'&&<label className="customer-field"><span>时间规则（分 时 日 月 周）</span><Input aria-label="计划时间规则" disabled={disabled} value={value} onChange={e=>onChange(e.target.value)}/></label>}</div>
+}

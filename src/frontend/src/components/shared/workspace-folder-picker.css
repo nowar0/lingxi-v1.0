@@ -1,0 +1,13 @@
+.workspace-folder-picker { width: min(560px, calc(100vw - 32px)); max-width: 560px; }
+.workspace-folder-picker-body { display: grid; min-width: 0; gap: 14px; }
+.workspace-folder-picker-location { display: flex; align-items: center; gap: 5px; min-width: 0; }
+.workspace-folder-picker-location > button { flex-shrink: 0; }
+.workspace-folder-picker-location > button svg { width: 16px; height: 16px; }
+.workspace-folder-picker-location > input { min-width: 0; flex: 1; font-size: 13px; }
+.workspace-folder-picker-list { min-height: 220px; max-height: min(44vh, 360px); overflow-y: auto; border: 1px solid var(--border); border-radius: 14px; padding: 5px; background: color-mix(in srgb, var(--card) 92%, var(--sidebar)); }
+.workspace-folder-picker-item { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 38px; padding: 7px 10px; border-radius: 9px; text-align: left; color: var(--foreground); }
+.workspace-folder-picker-item:hover, .workspace-folder-picker-item:focus-visible { background: var(--secondary); }
+.workspace-folder-picker-item > svg:first-child { width: 17px; height: 17px; color: var(--muted-foreground); }
+.workspace-folder-picker-item > span { min-width: 0; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; }
+.workspace-folder-picker-item > svg:last-child { width: 14px; height: 14px; color: var(--muted-foreground); }
+.workspace-folder-picker-status { padding: 14px; color: var(--muted-foreground); font-size: 13px; line-height: 1.6; }

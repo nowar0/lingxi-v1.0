@@ -1,0 +1,13 @@
+.desktop-window-controls{display:flex;flex:0 0 108px;width:108px;height:28px;margin-left:auto;align-self:center;pointer-events:auto;border:0;border-radius:0;background:transparent;box-shadow:none;color:var(--muted-foreground);-webkit-app-region:no-drag}
+.desktop-window-controls>button{display:grid;place-items:center;flex:1;min-width:0;height:28px;border:0;border-radius:0;background:transparent;box-shadow:none}
+.desktop-window-controls>button:hover{background:var(--secondary)}
+.desktop-window-controls>button:focus-visible{outline:1px solid var(--foreground);outline-offset:-3px}
+.desktop-window-controls>button.desktop-window-close:hover{background:var(--foreground);color:var(--card)}
+.desktop-window-controls svg{width:12px;height:12px;stroke-width:1.5}
+.desktop-window-drag-edge{position:fixed;inset:0 0 auto;height:6px;z-index:900;-webkit-app-region:drag}
+.has-desktop-window-chrome .sidebar-header,.has-desktop-window-chrome [data-page-header],.has-desktop-window-chrome .personal-heading,.has-desktop-window-chrome .workspace-toolbar,.has-desktop-window-chrome .companion-chat-header{-webkit-app-region:drag}
+.has-desktop-window-chrome :is(.sidebar-header,[data-page-header],.personal-heading,.workspace-toolbar,.companion-chat-header) :is(button,a,input,select,textarea,[role=tab],[role=menuitem],.workspace-tab,.workspace-tablist){-webkit-app-region:no-drag}
+.sidebar-compact-toggle{display:none;align-items:center;justify-content:center;flex-shrink:0;width:32px;height:32px;border-radius:9px}
+.sidebar-compact-toggle:hover{background:var(--secondary)}
+.has-desktop-window-chrome .app-topbar{-webkit-app-region:drag}
+.has-desktop-window-chrome .app-topbar :is(button,a,input){-webkit-app-region:no-drag}

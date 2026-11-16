@@ -1,0 +1,35 @@
+.task-page .task-detail-panel{border-radius:18px;isolation:isolate}
+.task-page{padding-left:16px}
+.task-page .task-layout{gap:8px}
+.task-page .task-layout.is-list-collapsed{grid-template-columns:56px minmax(0,1fr)}
+.task-page .task-layout.is-list-collapsed>.task-list-panel{display:none}
+.task-page .task-layout.is-list-collapsed>.task-detail-panel{display:flex}
+.task-page .task-layout{position:relative}
+.task-page .task-list-search-row{display:flex;align-items:center;gap:6px}
+.task-page .task-list-search-row>.relative{flex:1;min-width:0}
+.task-page .task-list-reopen{display:flex;align-items:center;justify-content:center;align-self:start;width:56px;height:56px;border:1px solid var(--border);border-radius:18px;background:var(--card)}
+.task-page .task-list-toggle{flex:none;border-radius:8px;color:var(--foreground)}
+.task-page .task-list-toggle:hover{background:var(--secondary)}
+.task-page .task-detail-header{background:var(--card);backdrop-filter:none;padding:16px 20px;gap:16px;align-items:center}
+.task-detail-heading{min-width:0;flex:1}.task-detail-meta{display:flex;align-items:center;gap:9px;margin-bottom:6px}.task-detail-meta>span:last-child{font-size:12px;color:var(--muted-foreground)}
+.task-page .task-detail-header>div:first-of-type{min-width:0;flex:1;text-align:left}
+.task-page .task-detail-header h2{font-size:17px;line-height:1.5;overflow-wrap:anywhere;text-align:left}.task-detail-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.task-page .task-view-switch{padding:9px 20px;gap:5px}.task-page .task-view-switch button{min-height:32px;border-radius:8px;font-size:13px}
+.task-page .task-detail-body{padding:20px;min-height:0}.task-page .task-detail-body .section-title{font-size:14px}.task-page .task-detail-body pre{font-size:13px;line-height:1.8}
+.task-page .task-step h3{font-size:14px}.task-page .task-step p,.task-page .task-step h3+span{font-size:12px}.task-page .task-detail-body section+section{margin-top:24px}
+.task-page .task-step:focus{outline:2px solid var(--foreground);outline-offset:4px;border-radius:8px}
+.task-page .task-detail-panel.is-canvas-view>.team-workspace{min-height:0}.task-page .team-workspace{min-height:0}.task-page .team-canvas-tools{padding:8px 16px}.task-page .team-toolbar{padding:9px 16px;min-height:42px}.task-page .team-toolbar h3{font-size:13px}.task-page .team-toolbar p{font-size:12px}
+.task-page .team-member,.task-page .team-supervisor{border-radius:12px}.task-page .team-run-log{font-size:12px}.task-page .team-run-log>summary{font-size:12px}
+.task-settings-drawer.ui-dialog{translate:none!important;left:auto!important;right:0!important;top:0!important;bottom:0!important;width:min(460px,100vw)!important;max-width:460px!important;height:100dvh;max-height:100dvh!important;border-radius:18px 0 0 18px!important;animation:none!important;gap:0!important;padding:0!important;background:var(--card)!important;backdrop-filter:none;overflow:hidden}
+.task-settings-drawer.ui-dialog>.ui-dialog-body{padding:0 20px 24px;gap:20px}.task-settings-drawer .team-toolbar{padding:0;display:flex;align-items:center;gap:12px;flex-wrap:wrap}.task-settings-drawer .team-toolbar>div:first-child{display:none}.task-settings-drawer .team-actions{display:flex;gap:6px;flex-wrap:wrap}.task-settings-drawer .team-canvas-tools{padding:0;flex-wrap:wrap;gap:6px}.task-settings-drawer .team-legend{display:none}.task-settings-drawer .team-inspector{position:static;width:auto;max-width:none;padding:0;border:0;box-shadow:none;overflow:visible;background:transparent}
+.task-settings-drawer .team-inspector-close{display:none}.task-settings-drawer .team-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.task-settings-drawer .team-fields label{font-size:12px}.task-settings-drawer .team-wide{grid-column:1/-1}.task-settings-drawer .team-inspector h4{padding:0;margin:0 0 12px;font-size:14px}.task-settings-drawer .team-fields :is(input,:is(select,.lingxi-select),textarea){border-radius:8px;min-width:0;max-width:100%}.task-settings-drawer .team-fields textarea{min-height:96px}
+.task-settings-drawer details>summary{cursor:pointer;min-height:38px;display:flex;align-items:center;gap:8px;font-size:13px;font-weight:550;list-style:none}.task-settings-drawer details>summary:before{content:'›';display:inline-block;font-size:18px;color:var(--muted-foreground);transform:rotate(0);transition:transform 160ms}.task-settings-drawer details[open]>summary:before{transform:rotate(90deg)}
+.task-settings-section{border-top:1px solid var(--border);padding-top:10px;font-size:13px;line-height:1.8}.task-settings-section pre{font-size:12px;max-height:260px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}.task-settings-section dl>div{display:flex;justify-content:space-between;gap:16px;padding:5px 0}.task-settings-section dd{min-width:0;overflow-wrap:anywhere;text-align:right;color:var(--muted-foreground)}
+.task-settings-drawer .evo-task-quality{margin:0;padding:0;border:0}.task-settings-drawer .evo-task-quality p{font-size:12px;line-height:1.7}.task-settings-drawer .evo-task-quality ul{padding-left:12px}.task-settings-member-select{display:grid;gap:7px;font-size:12px;margin-bottom:16px}.task-settings-member-select :is(select,.lingxi-select){width:100%;padding:8px;border:1px solid var(--border);border-radius:8px;background:var(--input)}
+.task-settings-drawer .member-usage{margin-top:16px}.task-page .team-hint{font-size:12px}.task-settings-drawer .team-supervisor-info p{font-size:13px}
+@container(max-width:640px){.task-page .task-detail-header{padding:12px 16px;gap:10px;flex-wrap:wrap}.task-detail-actions{width:100%}.task-page .task-view-switch{padding-inline:16px}.task-page .task-detail-body{padding:16px}}
+@container(max-width:900px){.task-page .task-layout.is-list-collapsed{grid-template-columns:minmax(0,1fr)}.task-page .task-list-reopen{display:none}.task-page .task-list-toggle{display:none}.task-page .task-layout.is-list-collapsed:not(.has-task-selection)>.task-list-panel{display:flex}.task-page .task-layout.is-list-collapsed:not(.has-task-selection)>.task-detail-panel{display:none}}
+@media(max-width:460px){.task-settings-drawer .team-fields{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.task-settings-drawer details>summary:before{transition:none}}
+
+.has-desktop-window-chrome .task-settings-drawer>button:last-child{right:148px}

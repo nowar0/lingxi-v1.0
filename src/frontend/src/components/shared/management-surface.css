@@ -1,0 +1,263 @@
+/* One continuous management surface. Work/chat retain their own local styles. */
+.customer-page.management-page { display:flex; flex-direction:column; height:calc(100dvh - 50px); min-height:420px; padding-bottom:12px; max-width:none; --management-line:color-mix(in srgb,var(--foreground) 10%,transparent); --management-soft:color-mix(in srgb,var(--foreground) 4%,transparent); --management-ease:cubic-bezier(.22,1,.36,1); }
+.management-page .management-page-heading { margin-bottom:18px; min-height:36px; }
+.management-page .management-page-actions { display:flex; align-items:center; gap:8px; }
+.management-page .management-workspace { display:grid; grid-template-columns:184px minmax(0,1fr); flex:1; min-height:0; grid-template-rows:minmax(0,1fr); align-content:stretch; border:1px solid var(--management-line); border-radius:16px; background:var(--card); overflow:clip; }
+.management-page .management-navigation { display:flex; flex-direction:column; min-width:0; padding:18px 12px; border-right:1px solid var(--management-line); background:color-mix(in srgb,var(--foreground) 2%,var(--card)); min-height:0; overflow:auto; }
+.management-page .management-nav, .management-page .management-navigation .settings-tabs { display:flex; position:sticky; top:18px; flex-direction:column; align-items:stretch; justify-content:flex-start; width:100%; height:auto; gap:5px; padding:0; border:0; background:none; }
+.management-page .management-nav > button, .management-page .management-navigation .settings-tabs > button { display:flex; align-items:center; justify-content:flex-start; gap:10px; min-height:40px; padding:10px 12px; border:0; border-radius:10px; background:transparent; color:var(--muted-foreground); font-size:13px; font-weight:450; line-height:20px; white-space:nowrap; box-shadow:none; transition:background-color 140ms var(--management-ease),color 140ms var(--management-ease); }
+.management-page .management-nav > button > svg, .management-page .management-navigation .settings-tabs svg { width:16px; height:16px; flex:none; stroke-width:1.6; }
+.management-page .management-nav > button:hover, .management-page .management-navigation .settings-tabs > button:hover { background:var(--management-soft); color:var(--foreground); }
+.management-page .management-nav > button[aria-current=page], .management-page .management-navigation .settings-tabs > button[data-state=active] { background:var(--management-soft); color:var(--foreground); font-weight:550; box-shadow:none; }
+.management-page .management-navigation-footer { margin-top:auto; padding:28px 12px 4px; font-size:13px; line-height:1.6; color:var(--muted-foreground); }
+.management-page .management-navigation-footer a { display:flex; align-items:center; justify-content:space-between; gap:6px; min-height:28px; font-size:13px; }
+.management-page .management-navigation-footer svg { width:14px; height:14px; }
+.management-page .management-preference-note { color:var(--muted-foreground); }
+.management-page .management-connection-status { display:flex; align-items:center; gap:7px; }
+.management-page .management-connection-status > i { width:6px; height:6px; border-radius:50%; flex:none; }
+.management-page .management-content { min-width:0; min-height:0; padding:28px 32px 32px; overflow:auto; overscroll-behavior:contain; }
+.management-page .management-view { min-width:0; margin:0; animation:management-view-in 180ms var(--management-ease); }
+.management-page .management-view details > summary { position:relative; display:flex; align-items:center; min-height:42px; padding:9px 31px 9px 11px; border-radius:10px; color:var(--foreground); font-size:13px; line-height:1.55; cursor:pointer; list-style:none; }
+.management-page .management-view details > summary::-webkit-details-marker { display:none; }
+.management-page .management-view details > summary:hover,.management-page .management-view details > summary:focus-visible { background:var(--management-soft); }
+.management-page .management-view details > summary:focus-visible { outline:2px solid var(--foreground); outline-offset:2px; }
+.management-page .management-view details > summary:not(:has(>svg))::after { content:''; position:absolute; right:15px; width:7px; height:7px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform:rotate(45deg); transition:transform 140ms var(--management-ease); }
+.management-page .management-view details[open] > summary:not(:has(>svg))::after { transform:rotate(225deg); }
+.management-page .management-view > :first-child { margin-top:0; }
+.management-page .feature-status-panel { gap:0; }
+.management-page .feature-status-grid { gap:0 24px; }
+.management-page .feature-status-row { padding:18px 0; border:0; border-bottom:1px solid var(--management-line); border-radius:0; }
+.management-page .feature-status-row:last-child { border-bottom:0; }
+.management-page .feature-status-message { margin-bottom:18px; }
+.management-page .management-section-title, .management-page .customer-panel-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:36px; padding:0 0 22px; margin:0; border:0; }
+.management-page .management-section-title h2, .management-page .customer-panel-heading h2 { font-size:19px; line-height:1.4; font-weight:600; letter-spacing:-.02em; }
+.management-page .customer-panel-heading > div:first-child p { margin-top:5px; font-size:13px; line-height:1.5; color:var(--muted-foreground); }
+.management-page .settings-section, .management-page .skills-library, .management-page .mcp-library, .management-page .personal-plugin-library, .management-page .capability-panel { border:0; border-radius:0; background:transparent; box-shadow:none; overflow:visible; }
+.management-page .personal-toolbar { padding:0 0 18px; border:0; gap:10px; }
+.management-page .personal-search { flex:1; max-width:420px; min-height:36px; width:auto; border-color:var(--management-line); border-radius:10px; background:transparent; }
+.management-page .personal-search input { border:0; }
+.management-page .personal-search:focus-within { outline:1px solid var(--foreground); outline-offset:1px; }
+.management-page .personal-toolbar .lingxi-select { min-height:36px; border-color:var(--management-line); font-size:13px; border-radius:10px; }
+.management-page .personal-toolbar .personal-muted { margin-left:auto; font-size:13px; }
+.management-page .skills-list { border-top:1px solid var(--management-line); }
+.management-page .skill-row { display:flex; align-items:center; gap:14px; padding:19px 0; border-bottom:1px solid var(--management-line); }
+.management-page .skill-row:last-child { border-bottom:0; }
+.management-page .skill-row > svg { width:17px; height:17px; color:var(--muted-foreground); flex:none; }
+.management-page .skill-row > button:first-of-type { min-width:0; flex:1; text-align:left; border-radius:6px; }
+.management-page .skill-row-name { font-size:14px; line-height:1.5; font-weight:550; }
+.management-page .skill-row-description { margin-top:4px; font-size:13px; color:var(--muted-foreground); line-height:1.7; max-width:65ch; overflow-wrap:anywhere; }
+.management-page .skill-row-tags { display:flex; flex-wrap:wrap; gap:5px; margin-top:6px; }
+.management-page .skill-row-delete { color:var(--muted-foreground); opacity:0; transition:opacity 120ms; }
+.management-page .skill-row:hover .skill-row-delete, .management-page .skill-row:focus-within .skill-row-delete { opacity:1; }
+.management-page .personal-empty { gap:8px; min-height:220px; padding:32px 18px; }
+.management-page .personal-empty > svg { width:25px; height:25px; margin:0 0 8px; color:var(--muted-foreground); stroke-width:1.3; }
+.management-page .personal-empty h3 { font-size:15px; font-weight:500; }
+.management-page .personal-empty p { max-width:36ch; color:var(--muted-foreground); line-height:1.8; font-size:13px; }
+.management-page .personal-plugin-row { padding:18px 0; border-bottom:1px solid var(--management-line); border-radius:0; }
+.management-page .personal-plugin-row:hover, .management-page .personal-plugin-row.is-selected { background:var(--management-soft); }
+.management-page .personal-plugin-row > div { gap:9px; }
+.management-page .personal-plugin-row strong { font-size:14px; font-weight:550; }
+.management-page .personal-plugin-row > p { line-height:1.7; margin-bottom:8px; }
+.management-page .personal-library-split.has-selection { grid-template-columns:minmax(180px,.8fr) minmax(0,1.25fr); gap:20px; }
+.management-page .personal-plugin-detail { padding:0 0 0 22px; border-color:var(--management-line); }
+.management-page .mcp-service-list { border-top:1px solid var(--management-line); }
+.management-page .mcp-service-row { display:flex; align-items:center; gap:14px; padding:20px 0; border-bottom:1px solid var(--management-line); }
+.management-page .mcp-service-row:last-child { border-bottom:0; }
+.management-page .mcp-service-row > svg { width:17px; height:17px; flex:none; color:var(--muted-foreground); }
+.management-page .mcp-service-info { min-width:0; flex:1; text-align:left; }
+.management-page .mcp-service-info strong { display:block; font-size:14px; line-height:1.5; font-weight:550; overflow-wrap:anywhere; }
+.management-page .mcp-service-info span { display:block; margin-top:4px; color:var(--muted-foreground); font-size:13px; line-height:1.6; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.management-page .mcp-service-actions { display:flex; align-items:center; gap:10px; }
+.management-page .mcp-service-transport { flex:none; color:var(--muted-foreground); font-size:13px; }
+.management-page .management-local-detail { margin-top:2px; padding:22px 0; border-top:1px solid var(--management-line); border-bottom:1px solid var(--management-line); }
+.management-page .management-local-detail > div { display:flex; align-items:center; gap:14px; }
+.management-page .management-local-detail > div > svg { width:20px; height:20px; stroke-width:1.5; color:var(--muted-foreground); }
+.management-page .management-local-detail h3 { font-size:14px; font-weight:550; }
+.management-page .management-local-detail p { margin-top:5px; font-size:13px; color:var(--muted-foreground); }
+.management-page .management-local-detail .personal-state { margin-left:auto; }
+.management-page .management-local-detail > a { display:inline-flex; align-items:center; gap:6px; margin:20px 0 0 34px; font-size:13px; }
+.management-page .connection-future { margin-top:28px; border-top:0; }
+.management-page .connection-channel { padding:16px 0; }
+.management-page .connection-channel h3 { font-size:13px; }
+.customer-page.management-page.settings-page .settings-section-heading { min-height:36px; padding:0 0 22px; border:0; }
+.customer-page.management-page.settings-page .settings-section-heading h2 { font-size:19px; font-weight:600; }
+.customer-page.management-page.settings-page .settings-section-heading p { font-size:13px; margin-top:6px; line-height:1.7; max-width:60ch; }
+.customer-page.management-page.settings-page .settings-section > .p-5 { padding:0; }
+.customer-page.management-page.settings-page .setting-row { padding:16px 0; min-height:62px; gap:24px; border-color:var(--management-line); }
+.customer-page.management-page.settings-page .setting-row > div:first-child > div:first-child { font-size:13px; font-weight:500; }
+.customer-page.management-page.settings-page .setting-row > div:last-child { max-width:62%; }
+.management-page .preference-range { display:flex; align-items:center; gap:16px; width:230px; }
+.management-page .preference-range output { min-width:42px; text-align:right; font-size:13px; font-variant-numeric:tabular-nums; color:var(--muted-foreground); }
+.management-page .preference-range > :last-child { flex:1; }
+.management-page .preference-segment { display:flex; gap:2px; padding:3px; border-radius:10px; background:var(--management-soft); }
+.management-page .preference-segment button { min-width:56px; height:30px; box-shadow:none; }
+.management-page .appearance-mode-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-bottom:16px; }
+.customer-page.management-page.settings-page .appearance-choice.mode-button { display:flex; flex-direction:column; gap:10px; height:auto; padding:0; border:0; border-radius:11px; background:none; box-shadow:none; text-align:left; }
+.management-page .appearance-miniature { display:flex; width:100%; height:86px; border:1px solid var(--management-line); border-radius:10px; padding:8px; gap:7px; background:#fafafa; overflow:hidden; }
+.management-page .appearance-miniature > i { width:23%; border-radius:4px; background:#eaeaea; }
+.management-page .appearance-miniature > span { display:flex; flex:1; flex-direction:column; gap:7px; padding:6px 3px; }
+.management-page .appearance-miniature b { display:block; width:65%; height:5px; background:#d5d5d5; border-radius:2px; }
+.management-page .appearance-miniature b:first-child { width:42%; background:#333; }
+.management-page .appearance-miniature b:last-child { width:80%; }
+.management-page .appearance-miniature.is-dark { background:#242424; border-color:#3b3b3b; }
+.management-page .appearance-miniature.is-dark > i { background:#343434; }
+.management-page .appearance-miniature.is-dark b { background:#535353; }
+.management-page .appearance-miniature.is-dark b:first-child { background:#c9c9c9; }
+.management-page .appearance-miniature.is-system { background:linear-gradient(90deg,#fafafa 50%,#242424 50%); }
+.management-page .appearance-miniature.is-system > span { align-items:flex-end; }
+.management-page .appearance-miniature.is-system b { background:#656565; }
+.management-page .appearance-choice.is-active .appearance-miniature { border-color:var(--foreground); box-shadow:0 0 0 1px var(--foreground); }
+.management-page .appearance-choice-label { display:flex; align-items:center; gap:7px; width:100%; padding:0 3px; font-size:13px; color:var(--muted-foreground); }
+.management-page .appearance-choice-label > svg { width:14px; height:14px; }
+.management-page .appearance-choice.is-active .appearance-choice-label { color:var(--foreground); }
+.management-page .appearance-choice-label .appearance-choice-check { margin-left:auto; width:13px; height:13px; }
+.management-page .preference-accent { border-top:1px solid var(--management-line); padding:15px 0; }
+.management-page .preference-color-row { display:flex; align-items:center; gap:12px; padding:8px 1px 0; }
+.management-page .setting-row .preference-color-row { padding-top:0; flex-wrap:wrap; justify-content:flex-end; }
+.management-page .preference-color-row > button { display:grid; place-items:center; width:26px; height:26px; border-radius:50%; color:#fff; }
+.management-page .preference-color-row > button[aria-pressed=true] { outline:2px solid var(--foreground); outline-offset:3px; }
+.management-page .preference-color-row > button > svg { width:13px; height:13px; }
+.management-page .preference-group + .preference-group { margin-top:24px; padding-top:24px; border-top:1px solid var(--management-line); }
+.management-page .theme-package .management-section-title { padding-bottom:14px; }
+.management-page .theme-package-row { display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.management-page .theme-package-row > div:first-child { min-width:0; }
+.management-page .theme-package-row strong { display:block; max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; font-weight:500; }
+.management-page .theme-package-row p { margin-top:5px; font-size:13px; line-height:1.6; color:var(--muted-foreground); }
+.management-page .theme-package-row > div:last-child { display:flex; align-items:center; flex-shrink:0; gap:6px; }
+.management-page .close-behavior-settings { margin-top:24px; padding:22px 0 0; border:0; border-top:1px solid var(--management-line); border-radius:0; background:transparent; box-shadow:none; }
+.settings-model-behavior { display:grid; gap:28px; }
+.settings-model-behavior > .settings-section + .settings-section { padding-top:26px; border-top:1px solid var(--management-line); }
+.settings-model-behavior .settings-section-heading { padding-bottom:16px; }
+.settings-model-behavior .settings-section > .p-5, .settings-model-behavior .settings-section > .space-y-4 { padding:0; }
+.management-page .close-behavior-settings h3 { font-size:13px; font-weight:500; }
+.management-page .close-behavior-settings p { max-width:44ch; font-size:13px; line-height:1.7; }
+.management-page .model-settings-tabs { display:flex; width:100%; margin-bottom:24px; padding:0; gap:22px; flex-wrap:wrap; border-radius:0; border-bottom:1px solid var(--management-line); background:none; }
+.management-page .model-settings-tabs > button { padding:0 0 12px; border:0; border-radius:0; box-shadow:none; font-size:13px; color:var(--muted-foreground); background:none; }
+.management-page .model-settings-tabs > button[data-state=active] { color:var(--foreground); background:none; box-shadow:0 1px 0 var(--foreground); }
+.management-page .model-module-row .lingxi-select { max-width:100%; }
+.management-page .management-content .model-module-row { display:flex; flex-wrap:nowrap; align-items:center; }
+.management-page .management-content .model-module-row > div:last-child { flex-shrink:0; }
+.management-page .management-data-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:26px; }
+.management-page .management-data-heading h2 { font-size:19px; font-weight:600; letter-spacing:-.02em; }
+.management-page .management-data-heading .lingxi-select { font-size:13px; min-width:150px; }
+.management-page .memory-settings-inline > header { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.management-page .management-data-sections { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:6px; padding:5px; margin:-10px 0 24px; border:1px solid var(--management-line); border-radius:13px; }
+.management-page .management-data-sections button { min-height:40px; padding:8px 12px; border-radius:9px; color:var(--muted-foreground); font-size:13px; text-align:left; transition:background-color 140ms var(--management-ease),color 140ms var(--management-ease); }
+.management-page .management-data-sections button:hover,.management-page .management-data-sections button:focus-visible { background:var(--management-soft); color:var(--foreground); }
+.management-page .management-data-sections button[aria-current=page] { background:var(--management-soft); color:var(--foreground); font-weight:600; }
+.management-page.settings-page .management-view details > summary { position:relative; display:flex; align-items:center; min-height:42px; padding:9px 31px 9px 11px; border-radius:10px; color:var(--foreground); font-size:13px; line-height:1.55; cursor:pointer; list-style:none; }
+.management-page.settings-page .management-view details > summary::-webkit-details-marker { display:none; }
+.management-page.settings-page .management-view details > summary:hover,.management-page.settings-page .management-view details > summary:focus-visible { background:var(--management-soft); }
+.management-page.settings-page .management-view details > summary:focus-visible { outline:2px solid var(--foreground); outline-offset:2px; }
+.management-page.settings-page .management-view details > summary:not(:has(>svg))::after { content:''; position:absolute; right:15px; width:7px; height:7px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform:rotate(45deg); transition:transform 140ms var(--management-ease); }
+.management-page.settings-page .management-view details[open] > summary:not(:has(>svg))::after { transform:rotate(225deg); }
+.management-page .management-data .data-section .settings-section-heading h2 { font-size:14px; }
+.management-page .management-data .data-section .settings-section-heading { padding-bottom:16px; }
+.management-page .work-preset-settings > header { margin-bottom:22px; }
+.management-page .work-preset-settings h2 { font-size:19px; }
+.management-page .work-preset-settings > header p { max-width:48ch; margin-top:6px; font-size:13px; }
+.management-page .work-preset-cards { grid-template-columns:1fr; gap:0; }
+.management-page .work-preset-cards article { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:5px 18px; padding:18px 0; border:0; border-top:1px solid var(--management-line); border-radius:0; background:none; }
+.management-page .work-preset-cards article > header { padding:0; }
+.management-page .work-preset-cards h4 { font-size:14px; font-weight:550; }
+.management-page .work-preset-cards article > p { min-height:0; margin:0; font-size:13px; line-height:1.8; }
+.management-page .work-preset-cards footer { display:flex; align-items:center; grid-column:2; grid-row:1 / span 2; margin:0; padding:0; border:0; }
+.management-page .work-preset-cards footer button { font-size:13px; padding:7px 10px; border-radius:8px; }
+.management-page .work-preset-cards footer button:hover { background:var(--management-soft); }
+.management-page .key-library-layout.is-empty { display:block; }
+.management-page .key-library-layout.is-empty .key-library-sidebar { display:none; }
+.management-page .key-library-layout.is-empty .key-library-detail { padding:32px 0; border:0; }
+.management-page .model-profile { padding:17px 0; border-color:var(--management-line); }
+.management-page .model-profile .service-icon { width:22px; height:22px; border:0; border-radius:0; background:none; color:var(--muted-foreground); box-shadow:none; }
+.management-page .model-profile :is(.text-\[10px\],.text-\[11px\]) { font-size:13px; }
+.management-page .capability-panel { padding:0; }
+.management-page .capability-panel > header h2 { font-size:19px; }
+.management-page .capability-grid { grid-template-columns:1fr; }
+.management-page .capability-grid article { padding:15px 0; border-color:var(--management-line); }
+.management-page .capability-grid article > div:first-child { justify-content:space-between; }
+.management-page .capability-grid article h3 { font-size:13px; }
+.management-page .capability-detail { font-size:13px; }
+.management-page .capability-detail > summary { color:var(--muted-foreground); }
+.management-page :is(button,input,textarea,summary,a):focus-visible { outline:2px solid var(--foreground); outline-offset:3px; }
+@keyframes management-view-in { from { opacity:.7; transform:translateY(3px); } to { opacity:1; transform:translateY(0); } }
+@container(max-width:950px) { .management-page .management-workspace { grid-template-columns:160px minmax(0,1fr); }.management-page .management-content { padding:24px; }.management-page .management-navigation { padding-inline:10px; }.management-page .management-nav > button,.management-page .management-navigation .settings-tabs > button { padding-inline:10px; }.management-page .management-content .model-module-row { flex-wrap:wrap; gap:12px; }.management-page .management-content .model-module-row > div:last-child { max-width:100%; }.management-page .mcp-service-transport { display:none; } }
+@container(max-width:760px) { .management-page .management-workspace { grid-template-columns:1fr; min-height:0; }.management-page .management-navigation { padding:10px 14px; border-right:0; border-bottom:1px solid var(--management-line); }.management-page .management-nav,.management-page .management-navigation .settings-tabs { position:static; flex-direction:row; flex-wrap:nowrap; overflow-x:auto; gap:3px; padding:0; scrollbar-width:none; }.management-page .management-navigation-footer { display:none; }.management-page .management-nav > button,.management-page .management-navigation .settings-tabs > button { flex:none; padding:8px 11px; min-height:36px; }.management-page .management-content { padding:22px 20px; }.management-page .skill-row-delete { opacity:1; }.management-page .appearance-mode-grid { gap:10px; }.management-page .appearance-miniature { height:72px; }.management-page .personal-library-split.has-selection { grid-template-columns:1fr; }.management-page .personal-plugin-detail { padding-left:0; border:0; }.management-page .mcp-service-actions { gap:6px; } }
+@media(max-width:600px) { .management-page .customer-panel-heading { flex-wrap:wrap; }.management-page .personal-toolbar { flex-wrap:wrap; }.management-page .personal-search { flex:1 1 200px; }.management-page .personal-toolbar .lingxi-select { max-width:100%; }.management-page .mcp-service-row { flex-wrap:wrap; }.management-page .mcp-service-info { flex-basis:calc(100% - 44px); }.management-page .mcp-service-actions { margin-left:30px; }.management-page .preference-range { width:180px; }.management-page .theme-package-row { align-items:flex-start; flex-direction:column; }.management-page .work-preset-cards article { grid-template-columns:1fr; }.management-page .work-preset-cards footer { grid-column:1; grid-row:auto; justify-self:start; margin-left:-10px; }.management-page .management-data-heading { flex-wrap:wrap; } }
+@media(max-width:600px) { .management-page .management-data-sections { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(prefers-reduced-motion:reduce) { .management-page * { animation:none!important; transition:none!important; } }
+.reduce-motion .management-page * { animation:none!important; transition:none!important; }
+
+.customer-page.management-page.settings-page .model-settings-tabs { justify-content:flex-start; width:100%; border-radius:0; padding:0; margin-bottom:24px; background:none; }
+.customer-page.management-page.settings-page .model-settings-tabs > button { border-radius:0; background:none; box-shadow:none; padding:0 0 12px; font-size:13px; }
+.customer-page.management-page.settings-page .model-settings-tabs > button[data-state=active] { box-shadow:0 1px 0 var(--foreground); background:none; }
+.customer-page.management-page.settings-page .model-module-row > div:first-child { flex:1; }
+.customer-page.management-page.settings-page .model-module-row > div:last-child { flex:0 0 auto; margin-left:auto; }
+.customer-page.management-page.settings-page .setting-row > div:first-child { flex:1; }
+.customer-page.management-page.settings-page .setting-row > div:last-child { flex:0 0 auto; }
+.customer-page.management-page.settings-page .management-content .model-module-row { display:flex!important; }
+.customer-page.management-page.settings-page .model-module-row > div:last-child > div { justify-content:flex-end; }
+@container(max-width:950px) { .customer-page.management-page.settings-page .management-content .model-module-row { flex-wrap:wrap; }.customer-page.management-page.settings-page .model-module-row > div:last-child { margin-left:0; } }
+@container(max-width:760px) { .management-page .management-workspace { grid-template-rows:auto minmax(0,1fr); }.management-page .management-navigation { align-self:start; }.management-page .management-content { align-self:stretch; } }
+.management-page .skill-row-name { overflow-wrap:anywhere; }
+.management-page .personal-plugin-row > div { align-items:center; }
+.management-page .personal-plugin-row strong { min-width:0; flex:1; overflow-wrap:anywhere; }
+.management-page .personal-plugin-row > div > span { flex:none; }
+
+/* Customer-facing copy stays readable; status chips remain compact. */
+.management-page .text-xs,.management-page .setting-row p{font-size:13px;line-height:1.65}
+.management-page .data-section table :is(th,td):nth-child(2),.management-page .data-section table :is(th,td):nth-child(3){text-align:right;font-variant-numeric:tabular-nums}
+
+/* A single service selector avoids a third navigation column. */
+.management-page .key-library-layout { display:flex; flex-direction:column; min-height:0; }
+.management-page .key-library-sidebar { display:flex; align-items:center; gap:12px; padding:0 0 18px; border:0; max-height:none; overflow:visible; }
+.management-page .key-library-sidebar > span { flex:none; font-size:13px; color:var(--muted-foreground); }
+.management-page .key-library-sidebar .lingxi-select { width:min(100%,360px); min-width:0; }
+.management-page .key-library-detail { padding:0; min-width:0; }
+.connection-page .key-library-section > .settings-section-heading { align-items:flex-start; flex-wrap:wrap; gap:16px 24px; min-height:36px; padding:0 0 22px; border:0; }
+.connection-page .key-library-section > .settings-section-heading h2 { font-size:19px; font-weight:600; }
+.connection-page .key-library-section > .settings-section-heading p { margin-top:6px; color:var(--muted-foreground); font-size:12px; line-height:1.8; }
+.management-page .key-library-heading-actions { display:flex; align-items:center; justify-content:flex-end; gap:10px; min-width:0; flex-wrap:nowrap; white-space:nowrap; }
+.management-page .key-library-heading-actions .key-library-sidebar { display:flex; align-items:center; gap:8px; padding:0; border:0; max-height:none; overflow:visible; }
+.management-page .key-library-heading-actions .key-library-sidebar > span { white-space:nowrap; }
+.management-page .key-library-heading-actions .key-library-sidebar > .lingxi-select { display:inline-flex; flex-direction:row; align-items:center; justify-content:flex-start; flex:none; width:max-content; max-width:240px; min-height:36px; padding:7px 12px; gap:6px; text-align:left; white-space:nowrap; }
+.management-page .key-library-heading-actions .key-library-sidebar > .lingxi-select > span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.management-page .management-catalog > * + * { margin-top:32px; padding-top:28px; border-top:1px solid var(--management-line); }
+.management-page .management-catalog .personal-plugin-library { min-width:0; }
+.management-page .model-source-tabs{display:flex;gap:22px;margin-bottom:24px;border-bottom:1px solid var(--management-line)}
+.management-page .model-source-tabs button{padding:0 2px 12px;color:var(--muted-foreground);font-size:13px}
+.management-page .model-source-tabs button[aria-pressed=true]{color:var(--foreground);box-shadow:0 1px 0 var(--foreground)}
+.management-page .model-source-tabs button:focus-visible{outline:2px solid var(--foreground);outline-offset:3px}
+.management-page .model-library-view .local-models-panel{margin-top:18px;padding-top:0;border-top:0}
+.management-page .model-library-view .model-center-library .personal-empty{min-height:88px;padding:20px 0;align-items:flex-start;text-align:left}
+.management-page .model-library-view .local-models-panel .personal-empty{min-height:120px;padding:22px 12px}
+.management-page .model-local-stack{display:grid;gap:24px}
+.management-page .model-profile > div { min-width:0; }
+.management-page .management-page-heading { flex-wrap:wrap; gap:12px; }
+.management-page .management-content :is(input,select,textarea) { max-width:100%; }
+
+/* Keep the status heading and navigation still; only its inventory scrolls. */
+.app-main:has(> .skills-status-page) { overflow:hidden; }
+.management-page.skills-status-page { display:flex; flex-direction:column; height:100%; min-height:0; overflow:hidden; }
+.skills-status-page > .management-page-heading { flex:none; }
+.skills-status-page > .management-workspace { flex:1; min-height:0; grid-template-rows:minmax(0,1fr); align-content:stretch; overflow:hidden; }
+.skills-status-page .management-content,
+.skills-status-page .management-view { display:flex; flex-direction:column; min-height:0; overflow:hidden; }
+.skills-status-page .management-content { align-self:stretch; }
+.skills-status-page .management-view,
+.skills-status-page .feature-status-panel { flex:1; min-height:0; }
+.skills-status-page .feature-status-panel { display:flex; flex-direction:column; overflow:hidden; }
+.skills-status-page .feature-status-heading,
+.skills-status-page .feature-status-message { flex:none; }
+.skills-status-page .feature-status-grid { flex:1; min-height:0; overflow-y:auto; overflow-x:hidden; align-content:start; overscroll-behavior-y:contain; scrollbar-gutter:stable; }
+@container(max-width:760px) {
+ .skills-status-page > .management-workspace { grid-template-rows:auto minmax(0,1fr); }
+}
+@container(max-width:600px) {
+ .management-page .management-content { padding:18px 16px; }
+ .management-page .model-center-profile { grid-template-columns:1fr; }
+ .management-page .model-center-profile-actions { justify-content:flex-start; }
+ .management-page .model-module-row { display:flex!important; flex-wrap:wrap; gap:12px; }
+ .management-page .model-module-row > div:last-child { margin-left:0; max-width:100%; }
+ .management-page .key-library-heading-actions { justify-content:flex-start; width:100%; }
+ .management-page .key-library-heading-actions .key-library-sidebar { flex-direction:row; align-items:center; }
+}

@@ -1,0 +1,98 @@
+/* Scoped only to the independent Card. The application shell and font palette are untouched. */
+.memory-nebula { overflow: hidden; color: var(--foreground); font: inherit; }
+.memory-nebula button, .memory-nebula input, .memory-nebula select { font: inherit; }
+.memory-nebula button { border: 1px solid var(--border); border-radius: 7px; background: var(--card); color: var(--foreground); padding: 6px 10px; font-size: 11px; line-height: 1.5; }
+.memory-nebula button:hover:not(:disabled) { background: var(--accent); border-color: color-mix(in srgb, var(--primary) 40%, var(--border)); }
+.memory-nebula button:disabled { opacity: .45; cursor: not-allowed; }
+.memory-nebula :is(button, input, select, canvas, a):focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.memory-nebula__heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 22px 24px 18px; }
+
+.memory-nebula__heading h2 { margin: 7px 0 5px; font-size: 20px; font-weight: 600; letter-spacing: .02em; }
+.memory-nebula__heading p { margin: 0; color: var(--muted-foreground); font-size: 11px; line-height: 1.8; }
+.memory-nebula__count { color: var(--muted-foreground); font-size: 11px; text-align: right; }
+.memory-nebula__filters { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; border-top: 1px solid var(--border); padding: 12px 20px; background: color-mix(in srgb, var(--secondary) 45%, transparent); }
+.memory-nebula__filters fieldset { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; border: 0; margin: 0; padding: 0; }
+.memory-nebula__filters legend { float: left; margin-right: 10px; font-size: 11px; color: var(--muted-foreground); }
+.memory-nebula__filters fieldset label { display: inline-flex; gap: 4px; align-items: center; font-size: 11px; }
+.memory-nebula__filters input[type="checkbox"] { width: 13px; height: 13px; accent-color: var(--primary); margin: 0; }
+.memory-nebula__select { display: flex; gap: 6px; align-items: center; font-size: 11px; color: var(--muted-foreground); }
+.memory-nebula__filters select, .memory-nebula__search input { min-width: 0; max-width: 180px; height: 31px; border: 1px solid var(--border); border-radius: 7px; background: var(--card); color: var(--foreground); padding: 4px 8px; font-size: 11px; }
+.memory-nebula__search { margin-left: auto; }
+.memory-nebula__search input { width: 205px; max-width: 100%; }
+.memory-nebula__body { display: grid; grid-template-columns: minmax(0, 1fr) 260px; border-block: 1px solid var(--border); }
+.memory-nebula__scene { position: relative; min-height: 470px; overflow: hidden; background: #080f1d; color: #e0ebf5; isolation: isolate; }
+.memory-nebula__canvas { display: block; position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; cursor: grab; }
+.memory-nebula__canvas:active { cursor: grabbing; }
+.memory-nebula__canvas:focus-visible { outline-color: #a4c4f4; outline-offset: -5px; }
+.memory-nebula__scene-caption { position: absolute; left: 25px; top: 23px; pointer-events: none; }
+.memory-nebula__scene-caption > span { font-size: 11px; letter-spacing: .14em; color: #90abc5; }
+.memory-nebula__scene-caption p { margin: 9px 0 0; color: #c7d6e5; font-size: 12px; }
+.memory-nebula__labels { position: absolute; inset: 0; pointer-events: none; }
+.memory-nebula__labels button { position: absolute; width: max-content; max-width: 170px; height: 30px; padding: 5px 9px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #d9e7f3; border: 1px solid #a4c4f426; background: #0c1a2cd9; backdrop-filter: blur(8px); pointer-events: auto; font-size: 11px; box-shadow: 0 3px 18px #02071126; }
+.memory-nebula__labels button.is-group { border-color: #a4c4f43b; color: #bfd7ee; }
+.memory-nebula__labels button:hover { background: #19304b; border-color: #a4c4f4a0; }
+.memory-nebula__scene-controls { position: absolute; right: 17px; bottom: 17px; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px; max-width: calc(100% - 34px); padding: 5px; border: 1px solid #a4c4f420; border-radius: 10px; background: #091525c4; backdrop-filter: blur(9px); }
+.memory-nebula__scene-controls button { min-width: 28px; padding: 4px 7px; background: transparent; border-color: transparent; color: #bdd1e2; font-size: 11px; }
+.memory-nebula__scene-controls button:hover:not(:disabled), .memory-nebula__scene-controls button[aria-pressed="true"] { background: #a4c4f416; border-color: #a4c4f424; }
+.memory-nebula__scene-controls button:focus-visible { outline-color: #a4c4f4; }
+.memory-nebula__empty, .memory-nebula__fallback { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 35px; text-align: center; pointer-events: none; }
+.memory-nebula__empty > span, .memory-nebula__fallback > span { font-size: 40px; font-weight: 200; color: #a3c6df; text-shadow: 0 0 24px #6ba8d477; }
+.memory-nebula__empty h3, .memory-nebula__fallback h3 { margin: 16px 0 8px; color: #d5e3ef; font-size: 15px; font-weight: 500; }
+.memory-nebula__empty p, .memory-nebula__fallback p { max-width: 330px; margin: 0; color: #92a8be; font-size: 11px; line-height: 1.9; }
+.memory-nebula__fallback a { margin-top: 20px; color: #b2d2ef; font-size: 12px; pointer-events: auto; }
+.memory-nebula__directory { display: flex; min-width: 0; flex-direction: column; border-left: 1px solid var(--border); background: color-mix(in srgb, var(--card) 75%, transparent); }
+.memory-nebula__directory-heading { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 16px 15px 9px; }
+.memory-nebula__directory-heading h3 { margin: 0; font-size: 12px; font-weight: 600; }
+.memory-nebula__directory-heading small { margin-left: 5px; color: var(--muted-foreground); font-size: 11px; font-weight: 400; }
+.memory-nebula__directory-heading button { padding: 3px 7px; font-size: 11px; }
+.memory-nebula__directory-note { margin: 0; padding: 0 15px 12px; color: var(--muted-foreground); font-size: 11px; line-height: 1.8; }
+.memory-nebula .memory-nebula__reveal { margin: 0 12px 8px; color: var(--primary); font-size: 11px; text-align: left; }
+.memory-nebula__list { flex: 1; min-height: 120px; max-height: 370px; list-style: none; margin: 0; padding: 3px 8px 8px; overflow: auto; scroll-padding: 8px; }
+.memory-nebula__list li { margin-bottom: 4px; }
+.memory-nebula__list li button { width: 100%; border-color: transparent; background: transparent; padding: 11px 9px; text-align: left; }
+.memory-nebula__list li button.is-selected { border-color: color-mix(in srgb, var(--primary) 25%, var(--border)); background: color-mix(in srgb, var(--primary) 7%, var(--card)); }
+.memory-nebula__node-heading { display: flex; align-items: center; gap: 7px; }
+.memory-nebula__node-heading > i { flex-shrink: 0; width: 6px; height: 6px; border-radius: 50%; }
+.memory-nebula__node-heading strong { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; font-weight: 500; }
+.memory-nebula__node-heading small { color: var(--muted-foreground); font-size: 11px; }
+.memory-nebula__node-meta, .memory-nebula__node-metrics { display: block; overflow: hidden; margin: 6px 0 0 13px; color: var(--muted-foreground); font-size: 11px; line-height: 1.6; text-overflow: ellipsis; white-space: nowrap; }
+.memory-nebula__node-metrics { margin-top: 3px; opacity: .85; }
+.memory-nebula__pagination { display: flex; justify-content: space-between; align-items: center; gap: 5px; margin-top: auto; padding: 11px 12px; border-top: 1px solid var(--border); }
+.memory-nebula__pagination span { color: var(--muted-foreground); font-size: 11px; }
+.memory-nebula__pagination button { padding: 4px 7px; font-size: 11px; }
+.memory-nebula__legend { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 17px; padding: 13px 20px 7px; color: var(--muted-foreground); font-size: 11px; }
+.memory-nebula__legend > span { display: inline-flex; gap: 6px; align-items: center; }
+.memory-nebula__legend i { display: inline-block; width: 6px; height: 6px; border-radius: 50%; }
+.memory-nebula__legend i.is-solid, .memory-nebula__legend i.is-dashed { width: 21px; height: 0; border-radius: 0; border-top: 1px solid #88a9c2; }
+.memory-nebula__legend i.is-dashed { border-top: 1px dashed #a398bc; }
+.memory-nebula__aggregation { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 5px 20px 13px; color: var(--muted-foreground); font-size: 11px; line-height: 1.9; }
+.memory-nebula__aggregation > span { flex: 1; min-width: 230px; }
+.memory-nebula__aggregation > div { display: flex; flex-wrap: wrap; gap: 6px; }
+.memory-nebula__aggregation button { font-size: 11px; }
+.memory-nebula__footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 5px 16px; padding: 11px 20px; border-top: 1px solid var(--border); color: var(--muted-foreground); font-size: 11px; line-height: 1.9; }
+.memory-nebula__footer p { flex: 1; min-width: 220px; margin: 0; }
+.memory-nebula__footer > span { white-space: nowrap; }
+.memory-nebula__warning { margin: 0; padding: 0 20px 13px; color: var(--destructive, #ab6547); font-size: 11px; }
+.memory-nebula__sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.memory-nebula__body.is-fallback { grid-template-columns: minmax(0, .7fr) minmax(260px, 1fr); }
+.memory-nebula__body.is-fallback .memory-nebula__canvas { visibility: hidden; }
+.memory-nebula__body.is-fallback .memory-nebula__scene { background: radial-gradient(ellipse at 50% 40%, #182b42, #080f1d 72%); }
+@media (max-width: 920px) { .memory-nebula__heading { padding: 19px; } .memory-nebula__filters { gap: 9px; padding: 11px 15px; } .memory-nebula__search { margin-left: 0; } .memory-nebula__body { grid-template-columns: minmax(0, 1fr) 225px; } .memory-nebula__scene-caption { left: 18px; top: 18px; } }
+@media (max-width: 680px) { .memory-nebula__heading { align-items: flex-start; gap: 12px; padding: 17px; } .memory-nebula__heading h2 { font-size: 18px; } .memory-nebula__count { max-width: 110px; font-size: 11px; line-height: 1.8; } .memory-nebula__body, .memory-nebula__body.is-fallback { grid-template-columns: 1fr; } .memory-nebula__scene { min-height: 350px; } .memory-nebula__directory { border-left: 0; border-top: 1px solid var(--border); } .memory-nebula__list { max-height: 240px; } .memory-nebula__body.is-fallback .memory-nebula__scene { min-height: 230px; } .memory-nebula__scene-controls { right: 10px; bottom: 10px; } .memory-nebula__filters select { max-width: 145px; } .memory-nebula__footer, .memory-nebula__aggregation, .memory-nebula__legend { padding-inline: 15px; } }
+/* Sparse real data gets less empty space; no geometry, camera, or memory is changed. */
+.memory-nebula--compact .memory-nebula__heading { gap: 12px; padding: 14px 18px 12px; }
+.memory-nebula--compact .memory-nebula__heading h2 { margin: 4px 0; font-size: 18px; }
+.memory-nebula--compact .memory-nebula__filters { gap: 8px 12px; padding: 9px 16px; }
+.memory-nebula--compact .memory-nebula__scene { min-height: 320px; }
+.memory-nebula--compact .memory-nebula__directory { max-height: 320px; }
+.memory-nebula--compact .memory-nebula__directory-heading { padding-top: 12px; }
+.memory-nebula--compact .memory-nebula__directory-note { padding-bottom: 8px; }
+.memory-nebula--compact .memory-nebula__list { min-height: 0; }
+@media (max-width: 680px) {
+  .memory-nebula--compact .memory-nebula__heading { padding: 13px 15px; }
+  .memory-nebula--compact .memory-nebula__scene { min-height: 280px; }
+  .memory-nebula--compact .memory-nebula__directory { max-height: 260px; }
+  .memory-nebula--compact .memory-nebula__list { max-height: 160px; }
+  .memory-nebula--compact .memory-nebula__body.is-fallback .memory-nebula__scene { min-height: 230px; }
+}
+@media (prefers-reduced-motion: reduce) { .memory-nebula *, .memory-nebula *::before, .memory-nebula *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }

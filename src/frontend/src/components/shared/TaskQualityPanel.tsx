@@ -1,0 +1,17 @@
+import { useEffect, useState } from 'react'
+import { api, json } from '@/api/client'
+import { useApp } from '@/context/AppContext'
+import type { TaskItem } from '@/types'
+import { Button } from '@/components/ui/button'
+import { toast } from 'sonner'
+type Check={status:string;estimated_generation_calls:number;estimated_media_calls:number;note:string;issues:Array<{node_id:string;message:string}>;nodes:Array<{node_id:string;selected:{model?:string;reason?:string};issues:string[]}>}
+export function TaskQualityPanel({task,onCreated,compact=false}:{compact?:boolean;task:TaskItem;onCreated?:(task:TaskItem)=>void}){
+ const {refreshTasks}=useApp();const [check,setCheck]=useState<Check>(),[busy,setBusy]=useState(false),[error,setError]=useState('')
+ useEffect(()=>{let live=true;void api<Check>(`/v6/jobs/${task.id}/preflight`).then(value=>{if(live){setCheck(value);setError('')}}).catch(e=>{if(live)setError((e as Error).message)});return()=>{live=false}},[task.id,task.revision])
+ return <section className="evo-task-quality"><details><summary>{compact?'配置检查':'配置预检与分配依据'}{check?.issues.length?` · ${check.issues.length} 项待配置`:''}</summary>{error&&<p className="evo-error" role="alert">{error}</p>}{check&&<>{!compact&&<p>{check.note}</p>}<p>{compact?`预计 ${check.estimated_generation_calls} 次生成 · ${check.estimated_media_calls} 次媒体调用`:`当前计划预计 ${check.estimated_generation_calls} 次生成、${check.estimated_media_calls} 次媒体调用；上下文摘要、允许的只读重试另计。`}</p><ul>{check.nodes.map(node=><li key={node.node_id}><strong>{node.node_id}</strong> · {node.selected.model||'尚未配置'}{!compact&&<p>{node.selected.reason}</p>}{node.issues.map(issue=><p className="evo-error" key={issue}>{issue}</p>)}</li>)}</ul></>}{['paused','blocked','cancelled'].includes(task.status)&&<><p>重新规划会调用模型 1 次，新建待开始的任务；原节点成果与记录保留。</p><Button variant="outline" size="sm" disabled={busy} onClick={()=>{setBusy(true);void api<TaskItem>(`/v6/jobs/${task.id}/replan`,json('POST',{expected_revision:task.revision,allow_planning_cost:true})).then(async value=>{await refreshTasks();onCreated?.(value);toast.success('已新建重规划任务，尚未启动')}).catch(e=>setError((e as Error).message)).finally(()=>setBusy(false))}}>确认重新规划（1次模型调用）</Button></>}</details><details><summary>{compact?'运行记录':'分配、摘要与技能读取记录'}</summary>{(task.events||[]).filter(event=>['assignment_reason','context_compacted','skill_loaded','auto_retry','replanned_from'].includes(event.event||'')).map((event,index)=><div key={event.seq||index}><strong>{event.node_id||'任务'} · {event.event}</strong><p>{event.detail}</p>{event.event==='context_compacted'&&<ContextSources jobId={task.id} nodeId={event.node_id||''}/>}</div>)}</details></section>
+}
+function ContextSources({jobId,nodeId}:{jobId:string;nodeId:string}){
+ const [items,setItems]=useState<Array<{id:string;sha256:string;characters:number}>>([]),[text,setText]=useState(''),[error,setError]=useState('')
+ useEffect(()=>{void api<{items:typeof items}>(`/v6/jobs/${jobId}/context-sources?node_id=${encodeURIComponent(nodeId)}`).then(v=>setItems(v.items)).catch(e=>setError((e as Error).message))},[jobId,nodeId])
+ return <div>{items.map(item=><details key={item.id}><summary>原文 {item.id.slice(0,12)} · {item.characters} 字符</summary><small>SHA256 {item.sha256}</small><Button size="xs" variant="outline" onClick={()=>void api<{text:string}>(`/v6/jobs/${jobId}/context-sources/${item.id}`).then(v=>setText(v.text)).catch(e=>setError((e as Error).message))}>读取完整原文</Button></details>)}{text&&<pre>{text}</pre>}{error&&<p>{error}</p>}</div>
+}

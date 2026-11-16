@@ -1,0 +1,9 @@
+.settings-search{position:relative;margin:0 0 20px;max-width:640px}
+.settings-search>label{display:flex;align-items:center;gap:8px}
+.settings-search>label>svg{width:16px;height:16px;flex-shrink:0;color:var(--muted-foreground)}
+.settings-search-results{display:grid;gap:2px;margin-top:8px;padding:8px;border:1px solid var(--border);border-radius:var(--radius);background:var(--background);max-height:330px;overflow:auto}
+.settings-search-results>button{text-align:left;display:grid;gap:3px;padding:10px 12px;border-radius:8px;font-size:13px}
+.settings-search-results>button:hover,.settings-search-results>button:focus-visible{background:var(--secondary)}
+.settings-search-results small{font-size:11px;color:var(--muted-foreground)}
+.settings-search-target{outline:2px solid var(--foreground);outline-offset:5px;border-radius:6px}
+@media(max-width:760px){.settings-search{max-width:none}.settings-search input{min-width:0}.memory-settings-inline .setting-row{flex-wrap:wrap;gap:10px}.memory-settings-inline .setting-row>div:last-child{display:flex;flex-wrap:wrap;gap:6px}}

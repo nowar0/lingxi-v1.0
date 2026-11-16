@@ -1,0 +1,35 @@
+.conversation-question-card { flex:none; min-width:0; width:100%; margin:0 0 8px; padding:14px 16px 12px; border:1px solid var(--border); border-radius:22px; background:var(--card); color:var(--foreground); font-size:13px; line-height:1.6; }
+.conversation-question-heading { display:flex; align-items:center; gap:8px; color:var(--muted-foreground); margin-bottom:12px; }
+.conversation-question-heading > svg { width:16px; height:16px; }
+.conversation-question-heading > button { display:grid; place-items:center; width:28px; height:28px; margin-left:auto; border-radius:8px; }
+.conversation-question-heading > button svg { width:16px; height:16px; }
+.conversation-question-body { max-height:min(40dvh,360px); overflow:auto; scrollbar-width:thin; scrollbar-color:var(--muted-foreground) transparent; overscroll-behavior:contain; }
+.conversation-question-body fieldset { min-width:0; padding:0; margin:0; border:0; }
+.conversation-question-body fieldset + fieldset { margin-top:20px; }
+.conversation-question-body legend { width:100%; margin-bottom:12px; font-weight:600; overflow-wrap:anywhere; }
+.conversation-question-body legend small { display:inline-block; margin-left:8px; font-size:11px; font-weight:400; color:var(--muted-foreground); }
+.conversation-question-options { display:grid; gap:4px; }
+.conversation-question-options > label { position:relative; display:flex; align-items:flex-start; gap:10px; min-height:38px; padding:6px; border-radius:10px; cursor:pointer; }
+.conversation-question-options input { position:absolute; width:1px; height:1px; opacity:0; }
+.conversation-question-options strong { display:block; font-weight:500; overflow-wrap:anywhere; }
+.conversation-question-options small { display:block; color:var(--muted-foreground); font-size:12px; overflow-wrap:anywhere; }
+.conversation-option-number { display:grid; place-items:center; flex:none; width:25px; height:25px; border:1px solid var(--border); border-radius:7px; background:var(--secondary); color:var(--muted-foreground); font-variant-numeric:tabular-nums; }
+.conversation-question-options label:has(input:checked) { background:var(--secondary); }
+.conversation-question-options input:checked + .conversation-option-number { background:var(--foreground); color:var(--background); border-color:var(--foreground); }
+.conversation-question-free { display:flex; align-items:flex-start; gap:10px; margin-top:10px; padding:6px; }
+.conversation-question-free svg { width:17px; height:17px; flex:none; margin-top:4px; color:var(--muted-foreground); }
+.conversation-question-free textarea { width:100%; min-width:0; min-height:30px; max-height:96px; padding:2px 0; resize:vertical; border:0; background:transparent; color:var(--foreground); font:inherit; line-height:1.6; border-radius:4px; }
+.conversation-question-free textarea::placeholder { color:var(--muted-foreground); opacity:1; }
+.conversation-question-actions { display:flex; justify-content:flex-end; gap:8px; margin-top:6px; }
+.conversation-question-actions button { display:flex; align-items:center; gap:6px; min-height:32px; padding:4px 12px; border:1px solid var(--border); border-radius:18px; font-weight:500; }
+.conversation-question-actions .conversation-question-send { border-color:transparent; background:var(--foreground); color:var(--background); }
+.conversation-question-actions svg { width:14px; height:14px; }
+.conversation-question-state { margin-top:8px; font-size:12px; color:var(--muted-foreground); }
+.conversation-question-card button:disabled,.conversation-question-card fieldset:disabled { opacity:.5; cursor:default; }
+.conversation-question-card button:not(:disabled):hover,.conversation-question-options label:hover { background:var(--secondary); color:var(--foreground); }
+.conversation-question-card :focus-visible,.conversation-question-options label:has(input:focus-visible) { outline:2px solid var(--foreground); outline-offset:2px; }
+.conversation-question-history { margin:8px 0; font-size:12px; line-height:1.6; color:var(--muted-foreground); overflow-wrap:anywhere; }
+.conversation-question-history summary { cursor:pointer; }
+.conversation-question-history p { margin:6px 0; }
+.conversation-question-history p + p { color:var(--foreground); }
+@container (max-width:400px) { .conversation-question-card { padding:10px 12px; border-radius:18px; } }

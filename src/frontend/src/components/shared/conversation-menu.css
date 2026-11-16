@@ -1,0 +1,16 @@
+.companion-conversation-menu { width: 292px; max-width: calc(100vw - 24px); max-height: min(520px, var(--radix-dropdown-menu-content-available-height)); overflow-y: auto; border-color: var(--border); border-radius: var(--radius); background: color-mix(in srgb, var(--popover) 96%, transparent); padding: 6px; transform-origin: var(--radix-dropdown-menu-content-transform-origin); animation-duration: 160ms; animation-timing-function: var(--ease-out); }
+.companion-conversation-menu > [role="menuitem"] { min-height: 38px; gap: 10px; padding: 8px 12px; font-size: 13px; }
+.companion-conversation-options { max-height: min(280px, 38dvh); overflow-y: auto; overscroll-behavior: contain; }
+.companion-conversation-option { display: flex; min-height: 38px; align-items: center; gap: 10px; border-radius: calc(var(--radius) * .55); padding: 8px 12px; color: var(--foreground); outline: none; cursor: default; font-size: 13px; line-height: 20px; user-select: none; }
+.companion-conversation-option[data-highlighted] { background: var(--accent); }
+.companion-conversation-option[data-state="checked"] { color: var(--primary); }
+.companion-conversation-option[data-disabled] { opacity: .5; pointer-events: none; }
+.companion-conversation-check { display: grid; width: 16px; height: 16px; flex: 0 0 16px; place-items: center; }
+.companion-conversation-check svg { width: 15px; height: 15px; }
+.companion-conversation-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.companion-conversation-pin { width: 12px; height: 12px; flex-shrink: 0; color: var(--muted-foreground); }
+.companion-conversation-empty { margin: 0; padding: 12px; color: var(--muted-foreground); font-size: 12px; }
+.companion-conversation-rename { display: grid; gap: 8px; padding: 8px 10px; }
+.companion-conversation-rename label { color: var(--muted-foreground); font-size: 12px; }
+.companion-conversation-rename input { height: 34px; font-size: 13px; }
+.companion-conversation-rename > div { display: flex; justify-content: flex-end; gap: 6px; }

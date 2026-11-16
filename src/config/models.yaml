@@ -1,0 +1,32 @@
+# 零汐的模型清单
+#
+# 一般不需要改这个文件：
+#   打开零汐 → 连接中心 → 模型服务，
+#   再到「功能分配」里选择用途即可。Key 保存在 Windows 凭据管理器，不写进这里。
+#
+# 高级用法：想固定角色对应的模型，就在下面 roles 里写一行。
+# 加一家厂商 = 加一个 provider 段落；换模型 = 改 roles 的一行。
+# 密钥不要写在此文件（见 app/config.py，走系统凭据管理器）。
+
+providers: []
+
+roles: {}
+
+think: {}
+
+# 手动配置示例（把行首的 # 去掉即可启用）：
+#
+# providers:
+#   - id: deepseek
+#     name: DeepSeek
+#     base_url: https://api.deepseek.com
+#     models:
+#       - id: deepseek-chat
+#         label: DeepSeek Chat
+#
+# roles:
+#   chat: deepseek/deepseek-chat
+#
+# # 哪些角色允许多花一点推理 token。默认是允许，这里可以逐个关掉。
+# think:
+#   chat: false

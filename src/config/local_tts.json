@@ -1,0 +1,18 @@
+{
+  "package_dir": "models/gpt-sovits",
+  "default_voice": "default",
+  "speed": 1.0,
+  "device": "cpu",
+  "voices": [
+    {
+      "id": "default",
+      "name": "默认音色",
+      "prompt_lang": "zh",
+      "text_lang": "all_zh",
+      "gpt_weights": "",
+      "sovits_weights": "",
+      "reference_audio": "",
+      "reference_text": ""
+    }
+  ]
+}

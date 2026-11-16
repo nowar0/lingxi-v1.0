@@ -1,0 +1,43 @@
+.composer { position: relative; }
+.composer-drawer-trigger { display: grid; flex: 0 0 34px; width: 34px; height: 34px; place-items: center; border-radius: 50%; background: var(--secondary); color: var(--foreground); }
+.composer-drawer-trigger svg { width: 20px; height: 20px; transition: transform 160ms var(--ease-out); }
+.composer-drawer-trigger .is-open { transform: rotate(45deg); }
+.composer-action-drawer { position: absolute; z-index: 40; bottom: calc(100% + 8px); left: -1px; right: -1px; max-height: min(550px,65dvh); overflow: auto; overscroll-behavior: contain; border: 1px solid var(--border); border-radius: var(--radius); background: color-mix(in srgb,var(--popover) 78%,transparent); backdrop-filter: blur(18px); color: var(--foreground); padding: 6px; box-shadow: 0 8px 28px #00000012; animation: composer-drawer-open 160ms var(--ease-out); text-align: left; }
+.composer-menu-header { display: flex; align-items: center; gap: 8px; padding: 8px 10px 5px; color: var(--muted-foreground); }
+.composer-menu-header strong { font-size: 12px; font-weight: 450; }
+.composer-menu-header button { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 6px; }
+.composer-menu-header button:last-child { margin-left: auto; }
+.composer-menu-header svg { width: 15px; height: 15px; }
+.composer-menu-row { display: flex; align-items: center; width: 100%; min-height: 42px; gap: 9px; padding: 9px 12px; border-radius: 9px; color: var(--foreground); text-align: left; }
+.composer-menu-row > svg { width: 17px; height: 17px; flex: 0 0 17px; }
+.composer-menu-row > span { min-width: 0; font-size: 14px; overflow-wrap: anywhere; }
+.composer-menu-row small { margin-left: 8px; font-size: 12px; color: var(--muted-foreground); }
+.composer-menu-row em { flex: 1; min-width: 0; margin-left: 16px; color: var(--muted-foreground); text-align: right; font-size: 12px; font-style: normal; line-height: 1.5; }
+.composer-menu-row:hover:not(:disabled),.composer-menu-row:focus-visible,.composer-reference-message:hover { background: color-mix(in srgb,var(--foreground) 7%,transparent); }
+.composer-action-drawer button:focus-visible,.composer-action-drawer :is(input,select,textarea):focus-visible { outline: 1px solid var(--foreground); outline-offset: -1px; }
+.composer-action-drawer button:disabled { opacity: .5; cursor: default; }
+.composer-menu-group { padding: 12px 12px 4px; color: var(--muted-foreground); font-size: 12px; }
+.composer-menu-form { display: grid; gap: 12px; padding: 8px 12px 14px; }
+.composer-menu-form :is(p,pre),.composer-menu-note { font-size: 12px; line-height: 1.65; color: var(--muted-foreground); overflow-wrap: anywhere; }
+.composer-menu-form label { display: grid; gap: 6px; font-size: 13px; }
+.composer-menu-form :is(input:not([type=checkbox]),select,textarea),.composer-reference-picker>input { width: 100%; min-width: 0; border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; background: var(--card); color: var(--foreground); font: inherit; }
+.composer-menu-form textarea { min-height: 80px; max-height: 150px; resize: vertical; }
+.composer-menu-form>button { justify-self: start; min-height: 34px; border: 1px solid var(--border); border-radius: 8px; padding: 7px 12px; font-size: 12px; background: var(--card); }
+.composer-menu-form>button[aria-pressed=true] { background: var(--foreground); color: var(--card); }
+.composer-menu-form .composer-menu-check { display: flex; flex-direction: row; align-items: center; gap: 8px; }
+.composer-menu-check input { accent-color: var(--foreground); }
+.composer-menu-error { margin: 8px 12px; font-size: 12px; line-height: 1.6; color: var(--foreground); }
+.composer-reference-picker { padding: 4px 8px 10px; }
+.composer-reference-tabs { display: flex; gap: 8px; margin-bottom: 10px; }
+.composer-reference-tabs button { display: flex; align-items: center; gap: 6px; padding: 6px 9px; border-radius: 6px; font-size: 12px; }
+.composer-reference-tabs button[aria-pressed=true] { background: var(--secondary); }
+.composer-reference-tabs svg { width: 14px; height: 14px; }
+.composer-reference-message { display: block; width: 100%; padding: 10px; text-align: left; font-size: 12px; border-radius: 8px; overflow-wrap: anywhere; }
+.composer-menu-note { display: flex; align-items: center; gap: 6px; padding: 8px 12px; }
+.composer-menu-note svg { width: 14px; height: 14px; }
+.conversation-panel-heading { display: flex; align-items: center; justify-content: space-between; padding: 4px 16px; font-size: 12px; background: var(--card); }
+.evo-conversation-tools:not(:has(.evo-toolbar,.evo-inline-panel,.evo-proposal,.evo-handoff-link,.evo-error)) { border: 0; }
+@keyframes composer-drawer-open { from { opacity: .55; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@container (max-width: 600px) { .composer-menu-row { flex-wrap: wrap; gap: 6px 8px; } .composer-menu-row em { flex-basis: 100%; margin-left: 25px; text-align: left; } }
+@media (prefers-reduced-motion: reduce) { .composer-action-drawer { animation: none; } .composer-drawer-trigger svg { transition: none; } }
+.reduce-motion .composer-action-drawer { animation: none; }

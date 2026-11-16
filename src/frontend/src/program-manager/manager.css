@@ -1,0 +1,8 @@
+/* The ordinary app scrolls inside its shell; this independent page needs its own root. */
+html:has(body.manager-page) { height: 100%; }
+body.manager-page { height: 100%; overflow: hidden; }
+body.manager-page #root { height: 100dvh; overflow: auto; overscroll-behavior: contain; }
+body.manager-page .page-container { min-height: 100%; width: min(1100px, 100%); margin-inline: auto; }
+
+body.manager-page{--background:#eeeeee;--foreground:#171717;--card:#fff;--card-foreground:#171717;--popover:#fff;--popover-foreground:#171717;--primary:#171717;--primary-foreground:#fff;--secondary:#f5f5f5;--muted-foreground:#626262;--border:#d3d3d3;--input:#f5f5f5;--ring:#171717;background:linear-gradient(130deg,#f1f1f1,#e7e7e7);color:var(--foreground)}
+@media(prefers-color-scheme:dark){body.manager-page{--background:#111;--foreground:#f2f2f2;--card:#1d1d1d;--card-foreground:#f2f2f2;--popover:#262626;--popover-foreground:#f2f2f2;--primary:#eaeaea;--primary-foreground:#171717;--secondary:#242424;--muted-foreground:#b5b5b5;--border:#484848;--input:#242424;--ring:#eaeaea;background:linear-gradient(130deg,#101010,#1a1a1a)}}

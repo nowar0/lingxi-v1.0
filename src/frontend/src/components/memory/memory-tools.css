@@ -1,0 +1,47 @@
+.memory-tools-drawer.ui-dialog{translate:none!important;left:auto!important;right:0!important;top:0!important;bottom:0!important;width:min(540px,100vw)!important;max-width:540px!important;height:100dvh;max-height:100dvh!important;border-radius:24px 0 0 24px!important;animation:none!important;gap:0!important;padding:0!important;background:var(--card)!important;backdrop-filter:none;overflow:hidden}
+.memory-tools-overlay{animation:none!important}
+.memory-tools-overlay[data-state=closed]{pointer-events:none!important}
+.memory-tools-drawer.ui-dialog>.ui-dialog-body{padding:0 24px 24px;gap:20px;overflow:auto;min-width:0;overscroll-behavior:contain}
+.memory-tools-tabs{display:flex;gap:4px;flex-wrap:wrap;padding:4px;border-radius:16px;background:var(--secondary)}
+.memory-tools-tabs button{flex:1;min-height:32px;padding:5px 12px;border-radius:12px;font-size:13px;white-space:nowrap}
+.memory-tools-tabs button[aria-pressed=true]{background:var(--card);color:var(--foreground)}
+.memory-tools-panel[hidden]{display:none!important}
+.memory-tools-drawer .memory-tools-panel{min-width:0;font-size:13px;line-height:1.7}
+.memory-tools-drawer .memory-tools-content>[data-slot=card],.memory-tools-drawer .memory-migration-card{box-shadow:none}
+.memory-tools-drawer .memory-tools-content>div:first-child{min-width:0}
+.memory-tools-drawer .memory-tools-content form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px}
+.memory-tools-drawer .memory-tools-content form input:not([type=checkbox]){grid-column:1/-1;min-width:0;width:100%}
+.memory-tools-drawer .memory-tools-content form label{min-width:0}
+.memory-tools-drawer .memory-tools-content form button{justify-self:end}
+.memory-tools-drawer .memory-migration-card>div{flex-wrap:wrap;min-width:0;gap:12px}
+.memory-tools-drawer .memory-migration-card h2{font-size:15px}
+.memory-tools-drawer .memory-migration-card button,.memory-tools-drawer .memory-migration-card .lingxi-select{max-width:100%;font-size:12px}
+.memory-tools-drawer p,.memory-tools-drawer dd{overflow-wrap:anywhere}
+.memory-tools-drawer :is(button,input,summary):focus-visible{outline:2px solid var(--foreground);outline-offset:3px}
+.memory-tools-drawer .memory-tools-archive{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.memory-sync-panel{display:flex;align-items:flex-start;gap:16px;justify-content:space-between}
+.memory-sync-panel p{margin:5px 0 0;color:var(--muted-foreground)}
+.memory-sync-panel button{flex:none}
+.memory-archive-return{padding-top:16px}
+.memory-tools-drawer .memory-tools-archive{min-height:340px;align-items:center;justify-content:center}
+.memory-tools-drawer .memory-tools-archive button{min-width:148px;justify-content:center}
+@media(max-width:540px){.memory-tools-drawer.ui-dialog{border-radius:18px 0 0 18px!important}.memory-tools-drawer.ui-dialog>.ui-dialog-body{padding-inline:18px}.memory-tools-tabs button{padding-inline:8px}.memory-tools-drawer .memory-tools-content form{grid-template-columns:1fr}.memory-tools-drawer .memory-tools-content form button{justify-self:start}}
+.memory-tools-drawer .memory-tools-content,.memory-tools-drawer .memory-migration-card{border:0;border-radius:0;background:transparent;box-shadow:none;padding:0}
+.memory-tools-drawer .memory-tools-content h2{display:none}
+.memory-tools-drawer .memory-migration-card>div:first-child{padding:0 0 16px}
+.memory-tools-drawer .memory-migration-card>div:first-child>div:first-child>span{display:none}
+.memory-tools-drawer .memory-migration-card>div:not(:first-child),.memory-tools-drawer .memory-migration-card>section{padding-inline:0;background:transparent}
+.memory-tools-drawer .memory-tools-content .grid{grid-template-columns:minmax(0,1fr)}
+.memory-tool-notice{font-size:13px;color:var(--muted-foreground);margin-bottom:12px}
+.memory-page .memory-main-card:has(.memory-star-view){min-height:0}
+.memory-page .memory-view-toolbar{padding:12px 16px;min-height:58px}
+.memory-page .memory-star-view>.memory-nebula--simple{padding:0;border:0;border-radius:0;box-shadow:none}
+.memory-page .memory-nebula--simple .memory-nebula__scene{height:clamp(360px,calc(100dvh - 260px),640px);background:var(--secondary);color:var(--foreground)}
+.memory-page .memory-nebula--simple .memory-nebula__scene-controls{padding:4px;gap:2px;border-radius:12px;backdrop-filter:none;background:var(--card)}
+.memory-page .memory-nebula--simple .memory-nebula__scene-controls button{display:grid;place-items:center;width:30px;height:30px;padding:6px;border-radius:8px}
+.memory-nebula--simple .memory-nebula__scene-controls svg{width:16px;height:16px}
+.memory-page .memory-nebula--simple :is(.memory-nebula__empty,.memory-nebula__fallback) h3{color:var(--foreground);font-size:14px;margin:0 0 12px}
+.memory-page .memory-nebula--simple :is(.memory-nebula__empty,.memory-nebula__fallback) button{pointer-events:auto;font-size:13px;padding:6px 12px;border-radius:10px}
+.memory-page .memory-graph-error{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;font-size:13px;color:var(--destructive)}
+@container(max-width:760px){.memory-page .memory-browser-layout{grid-template-columns:minmax(0,1fr)}.memory-page .memory-browser-layout>div+div{border-left:0;border-top:1px solid var(--border)}}
+@container(max-width:640px){.memory-page .memory-scope-tabs{display:flex;flex-wrap:nowrap;gap:4px}.memory-page .memory-scope-tabs>button{flex:1 1 0;min-width:0;padding:10px}.memory-page .memory-view-toolbar{padding:12px}.memory-page .memory-nebula--simple .memory-nebula__scene{height:380px}}

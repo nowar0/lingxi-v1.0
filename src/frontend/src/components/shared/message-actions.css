@@ -1,0 +1,19 @@
+.pointer-menu-anchor { position: fixed; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.message-action-menu { min-width: 174px; max-width: calc(100vw - 16px); max-height: min(460px, var(--radix-dropdown-menu-content-available-height)); overflow-y: auto; transform-origin: var(--radix-dropdown-menu-content-transform-origin); }
+.message-action-menu [role="menuitem"] { min-height: 36px; gap: 10px; font-size: 13px; }
+.message-action-menu kbd { margin-left: auto; padding-left: 22px; color: var(--muted-foreground); font-family: inherit; font-size: 11px; }
+.message-action-menu .is-destructive { color: var(--foreground); }
+.message-action-menu .is-destructive:focus { color: #c64053; background: color-mix(in srgb, #c64053 9%, var(--popover)); }
+[data-message-actions]:focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; }
+.message-inline-edit { min-width: min(360px, 58vw); }
+.message-inline-edit textarea { display: block; width: 100%; resize: vertical; min-height: 70px; max-height: 240px; border: 1px solid var(--border); border-radius: 8px; padding: 10px; background: var(--input); color: var(--foreground); font: inherit; line-height: 1.7; outline-color: var(--ring); }
+.message-inline-edit > div { display: flex; justify-content: flex-end; gap: 6px; margin-top: 8px; }
+.composer-quote { display: flex; align-items: center; gap: 9px; margin-bottom: 8px; padding: 8px 10px; border-radius: 9px; background: var(--secondary); color: var(--muted-foreground); font-size: 11px; }
+.composer-quote > svg { width: 14px; height: 14px; flex: 0 0 auto; color: var(--primary); }
+.composer-quote > div { flex: 1; min-width: 0; }
+.composer-quote strong { color: var(--foreground); font-weight: 500; }
+.composer-quote p { overflow: hidden; margin: 2px 0 0; text-overflow: ellipsis; white-space: nowrap; }
+.composer-quote > button { width: 26px; height: 26px; flex-shrink: 0; }
+.message-quoted-content { margin: 0 0 9px; padding: 7px 10px; border-left: 1px solid currentColor; opacity: .72; font-size: .9em; white-space: pre-wrap; }
+@media (prefers-reduced-motion: reduce) { .message-action-menu { animation: none !important; } }
+.reduce-motion .message-action-menu { animation: none !important; }

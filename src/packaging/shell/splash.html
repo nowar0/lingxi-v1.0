@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>零汐</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: transparent; }
+  body {
+    display: grid;
+    place-items: center;
+    font-family: "Microsoft YaHei UI", "PingFang SC", system-ui, sans-serif;
+    color: #181818;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .card {
+    width: 340px;
+    height: 248px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, .12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 22px;
+    -webkit-app-region: drag;
+  }
+  .logo {
+    width: 92px;
+    height: 92px;
+    border-radius: 22px;
+    background: #ffffff;
+    display: grid;
+    place-items: center;
+    box-shadow: none;
+    animation: breathe 2.6s ease-in-out infinite;
+  }
+  .logo img { width: 68px; height: 68px; }
+  @keyframes breathe {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-3px) scale(1.03); }
+  }
+  h1 {
+    margin: 2px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .12em;
+  }
+  .hint {
+    margin: 0;
+    font-size: 12.5px;
+    color: #626262;
+    letter-spacing: .04em;
+  }
+  .bar {
+    width: 148px;
+    height: 3px;
+    border-radius: 999px;
+    background: #eeeeee;
+    overflow: hidden;
+  }
+  .bar::after {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 100%;
+    border-radius: 999px;
+    background: #242424;
+    animation: slide 1.25s ease-in-out infinite;
+  }
+  @keyframes slide {
+    0% { transform: translateX(-46px); }
+    100% { transform: translateX(148px); }
+  }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo"><img src="assets/splash.png" alt="零汐"></div>
+    <h1>零汐</h1>
+    <p class="hint">正在唤醒本地服务…</p>
+    <div class="bar"></div>
+  </div>
+</body>
+</html>

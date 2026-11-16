@@ -1,0 +1,2235 @@
+{
+  "schema": "lingxi.model-packages.v1",
+  "packages": [
+    {
+      "id": "sensevoice-small",
+      "name": "SenseVoice Small INT8",
+      "kind": "stt",
+      "version": "2365baeacb507f82",
+      "source": "https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/tree/2365baeacb507f821a0c8120fcee3d484dba7a07",
+      "license": "见官方模型许可",
+      "files": [
+        {
+          "path": "LICENSE",
+          "size": 71,
+          "sha256": "221c6df10b0931a5629adad671ea48fb7747e034c414b6d2bfa275bc3dd4ea17",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/resolve/2365baeacb507f821a0c8120fcee3d484dba7a07/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "size": 104,
+          "sha256": "763991a00edaea534ab36bf1b7cf89e61e911666dcfabbba71f91f9f7c593a63",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/resolve/2365baeacb507f821a0c8120fcee3d484dba7a07/README.md"
+        },
+        {
+          "path": "model.int8.onnx",
+          "size": 239233841,
+          "sha256": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/resolve/2365baeacb507f821a0c8120fcee3d484dba7a07/model.int8.onnx"
+        },
+        {
+          "path": "tokens.txt",
+          "size": 315894,
+          "sha256": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/resolve/2365baeacb507f821a0c8120fcee3d484dba7a07/tokens.txt"
+        },
+        {
+          "path": "silero_vad.onnx",
+          "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.onnx",
+          "sha256": "9e2449e1087496d8d4caba907f23e0bd3f78d91fa552479bb9c23ac09cbb1fd6",
+          "size": 643854
+        }
+      ],
+      "device_hint": "CPU · 中英日韩粤",
+      "min_ram_mb": 2048,
+      "builtin_path": "models/sensevoice-small"
+    },
+    {
+      "id": "cosyvoice2",
+      "name": "CosyVoice2 0.5B",
+      "kind": "tts",
+      "version": "eec1ae6c79877dbd",
+      "source": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/tree/eec1ae6c79877dbd9379285cf8789c9e0879293d",
+      "license": "apache-2.0",
+      "files": [
+        {
+          "path": "weights/CosyVoice-BlankEN/config.json",
+          "size": 659,
+          "sha256": "168aa1bd401abc3bc262ba15ba4e499627a8b4e006e9d050b47c22de20660185",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/CosyVoice-BlankEN/config.json"
+        },
+        {
+          "path": "weights/CosyVoice-BlankEN/generation_config.json",
+          "size": 242,
+          "sha256": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/CosyVoice-BlankEN/generation_config.json"
+        },
+        {
+          "path": "weights/CosyVoice-BlankEN/merges.txt",
+          "size": 1402109,
+          "sha256": "ac8ff86a72bee70828fbc1119bc4398c6f3a9a6e490d7b0dbe917be025478bd0",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/CosyVoice-BlankEN/merges.txt"
+        },
+        {
+          "path": "weights/CosyVoice-BlankEN/model.safetensors",
+          "size": 988097824,
+          "sha256": "130282af0dfa9fe5840737cc49a0d339d06075f83c5a315c3372c9a0740d0b96",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/CosyVoice-BlankEN/model.safetensors"
+        },
+        {
+          "path": "weights/CosyVoice-BlankEN/tokenizer_config.json",
+          "size": 1287,
+          "sha256": "482bd979881423375ca5414e4e0d94cd7c5349dbb17fffd46b4d36d71e62a1bc",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/CosyVoice-BlankEN/tokenizer_config.json"
+        },
+        {
+          "path": "weights/CosyVoice-BlankEN/vocab.json",
+          "size": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/CosyVoice-BlankEN/vocab.json"
+        },
+        {
+          "path": "weights/README.md",
+          "size": 12073,
+          "sha256": "7b00725016d3fe143fc13cef1df27615df6ba9cd98c6716c5b98bbc54aefd525",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/README.md"
+        },
+        {
+          "path": "weights/campplus.onnx",
+          "size": 28303423,
+          "sha256": "a6ac6a63997761ae2997373e2ee1c47040854b4b759ea41ec48e4e42df0f4d73",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/campplus.onnx"
+        },
+        {
+          "path": "weights/cosyvoice2.yaml",
+          "size": 7330,
+          "sha256": "0af2c0d010c477187c39f3e8fd5f1ae2e4e6f90ad03ba37c10ed6c6a87b05959",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/cosyvoice2.yaml"
+        },
+        {
+          "path": "weights/flow.pt",
+          "size": 450575567,
+          "sha256": "ff4c2f867674411e0a08cee702996df13fa67c1cd864c06108da88d16d088541",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/flow.pt"
+        },
+        {
+          "path": "weights/hift.pt",
+          "size": 83390254,
+          "sha256": "3386cc880324d4e98e05987b99107f49e40ed925b8ecc87c1f4939432d429879",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/hift.pt"
+        },
+        {
+          "path": "weights/llm.pt",
+          "size": 2023316821,
+          "sha256": "b144ef55b51ce8cfb79a73c90dbba0bdaba4e451c0ebcfab20f769264f84a608",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/llm.pt"
+        },
+        {
+          "path": "weights/speech_tokenizer_v2.onnx",
+          "size": 496082973,
+          "sha256": "d43342aa12163a80bf07bffb94c9de2e120a8df2f9917cd2f642e7f4219c6f71",
+          "url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/resolve/eec1ae6c79877dbd9379285cf8789c9e0879293d/speech_tokenizer_v2.onnx"
+        },
+        {
+          "path": "source/CosyVoice/LICENSE",
+          "size": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/LICENSE"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/bin/average_model.py",
+          "size": 3202,
+          "sha256": "f362de1a5bd087cc451c0fd3f5f2490c14ed0e127f533ba4249705463ca373d6",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/bin/average_model.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/bin/export_jit.py",
+          "size": 3839,
+          "sha256": "7e44d6827c269f49b51c1fb8c5f424048a19f2b350d11485f36dfcf58965ee85",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/bin/export_jit.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/bin/export_onnx.py",
+          "size": 4486,
+          "sha256": "8ff4fef25eda1e7b664eda3f1c5f1ad14b5572bf68ca0185b48e96b910df74c2",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/bin/export_onnx.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/bin/train.py",
+          "size": 8153,
+          "sha256": "664eb4891150686b27446e1087caf66c0f3e4be552f835a43b0fbc13ce9aa757",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/bin/train.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/cli/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/cli/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/cli/cosyvoice.py",
+          "size": 14356,
+          "sha256": "4b2a605f129d172cd031286a14a591396c2e8ed0bf53258acc7445525fdaa65b",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/cli/cosyvoice.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/cli/frontend.py",
+          "size": 12553,
+          "sha256": "8d3dcb5880d76346f053f19344eac48adcff2aca70687293aadf4e1f33fadac3",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/cli/frontend.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/cli/model.py",
+          "size": 28138,
+          "sha256": "421ba52dd956505667668e0aec7fdcbcd85d733b52725b2d595bc32bcbb53ef9",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/cli/model.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/dataset/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/dataset/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/dataset/dataset.py",
+          "size": 5063,
+          "sha256": "b9fb7857690dc0fb61e599bf5ef22337802ab87cf8313d06b0ad08440ad186a5",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/dataset/dataset.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/dataset/processor.py",
+          "size": 16749,
+          "sha256": "27c8009a8da606dfd7b541fa28b34faba6d8bd9ff586a4c72b4738b2ad0aaa9a",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/dataset/processor.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/flow/DiT/dit.py",
+          "size": 5688,
+          "sha256": "5d14492e3ed68f5446853b0defd447bc401b12803b027a7b9584a3f3527633bf",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/flow/DiT/dit.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/flow/DiT/modules.py",
+          "size": 20551,
+          "sha256": "8c97f2af995e9ce06288be35b5119b243bb6a1aec687ef23032f20314f3f18cf",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/flow/DiT/modules.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/flow/decoder.py",
+          "size": 19866,
+          "sha256": "ef5eceb9db7f63ddda1d5bca6bfa6b28b8ea11656c4b1f9c109d28f656cbbf29",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/flow/decoder.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/flow/flow.py",
+          "size": 19736,
+          "sha256": "bb61c86b4cef2d000f397e7d99ca9096372046d433efbdbdfc29d5d5321e2111",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/flow/flow.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/flow/flow_matching.py",
+          "size": 10552,
+          "sha256": "d871c37176a673bde2a1bcd7c1f1e5083afdde246d05fe5d5203fcc9a23cf98e",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/flow/flow_matching.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/flow/length_regulator.py",
+          "size": 3137,
+          "sha256": "b2bbdabda04850df0c934562df95b237ca20fa7e8fe89d04d9b827a99d67411b",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/flow/length_regulator.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/hifigan/discriminator.py",
+          "size": 8617,
+          "sha256": "3db5b1b5584c600c996ee8c53ea021370a8ad9c62e3f5a28d5cf25f03ab9f9cf",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/hifigan/discriminator.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/hifigan/f0_predictor.py",
+          "size": 3757,
+          "sha256": "494630d73dad5e667c5042dae41acb673c4511b28c17e8ce343bbffa2fa3d512",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/hifigan/f0_predictor.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/hifigan/generator.py",
+          "size": 30487,
+          "sha256": "dd1c9f1ab5024bbcb4cec089b46e80844dbd00b5faf717a1906e166987200806",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/hifigan/generator.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/hifigan/hifigan.py",
+          "size": 3240,
+          "sha256": "e900da2f5e7ec302db9a6ea6d2b71990eabd8823e07e59419b7d8c52df7dc0d6",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/hifigan/hifigan.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/llm/llm.py",
+          "size": 35971,
+          "sha256": "c3799f4b2a00baaf1784bda86c5c7f22d4f9199b45e1fb9edd247b996d101ffa",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/llm/llm.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/tokenizer/assets/multilingual_zh_ja_yue_char_del.tiktoken",
+          "size": 907395,
+          "sha256": "747979631e813193436aabcff7c1c235d37de8097b71c563ec8b63b7a515c718",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/tokenizer/assets/multilingual_zh_ja_yue_char_del.tiktoken"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/tokenizer/tokenizer.py",
+          "size": 11253,
+          "sha256": "b852d0047f46f77cfec3335cf53214c9b3e1939e61049e9cb53fac403e32d4fe",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/tokenizer/tokenizer.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/activation.py",
+          "size": 3089,
+          "sha256": "a4a96caea9f7b05111286de5ea760bdfdf9c4e53448f53420857dc04a50440c2",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/activation.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/attention.py",
+          "size": 14389,
+          "sha256": "41d269b2d5e3a3952c0a538f46480aff8570767eb88e80452f367436cef628b1",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/attention.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/convolution.py",
+          "size": 9772,
+          "sha256": "bc248837af9458d7fdfa620a072d5f9e5a2851c420e1275fdda34c294e3a75c7",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/convolution.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/decoder.py",
+          "size": 16580,
+          "sha256": "db042c727e0e653ac924733b1fb15e69792ffd80c9d3cf62248374555d58a1cc",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/decoder.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/decoder_layer.py",
+          "size": 4807,
+          "sha256": "b95662ab72ec6b0b0f50c3a15fbecf16facb786d323b4aca1d063b9c21c0d64e",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/decoder_layer.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/embedding.py",
+          "size": 11777,
+          "sha256": "b50c30be5c66c39c95e0db1015814c545fcd062a936c0ea7ad4c01508b2595dc",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/embedding.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/encoder.py",
+          "size": 21434,
+          "sha256": "27f9d7499720372fbe6774d090b89ff063c7ecf88f93a4d75b27bb1adb2918a5",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/encoder.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/encoder_layer.py",
+          "size": 9602,
+          "sha256": "1920582be2c9b7cf7835e7b539118ec1eb9da8f2c711c6257f8598b3792951b9",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/encoder_layer.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/label_smoothing_loss.py",
+          "size": 3459,
+          "sha256": "db8804cf1c20e1afbf6c33de4836589b1947d881797d02d507c2a8a8d4f40fdd",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/label_smoothing_loss.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/positionwise_feed_forward.py",
+          "size": 4219,
+          "sha256": "6e8038e3bcc8ca086ddca508fb9b9d40bf3ab98bebabcf5c94935d032329d0f8",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/positionwise_feed_forward.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/subsampling.py",
+          "size": 12666,
+          "sha256": "31fc0347a851abc1205dfd4cf68099c0c416589c3e99a07b250e8630cece19d0",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/subsampling.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/transformer/upsample_encoder.py",
+          "size": 14229,
+          "sha256": "fe1d2c689fac401c0ef38a0639921b1cd2849fe1d10596980e480f88dc06a682",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/transformer/upsample_encoder.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/utils/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/utils/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/utils/class_utils.py",
+          "size": 3588,
+          "sha256": "f81a5509b5b4aecdb226b45ab43fa81d4cecb1bd88e48cd3bcda353891697b11",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/utils/class_utils.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/utils/common.py",
+          "size": 9323,
+          "sha256": "69aab9fe9cc80173f72a608e1b632611174f8c8e5032e4d9ce24fef18c8574bd",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/utils/common.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/utils/executor.py",
+          "size": 8842,
+          "sha256": "37b7f34fea19f6839484d5550e418cef214d452f12f7ca3f718f56824ac40a6c",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/utils/executor.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/utils/file_utils.py",
+          "size": 4887,
+          "sha256": "aeb9792d4a828f51e42339139cc97753ea931ab246df2f5f5d2703043fb5db72",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/utils/file_utils.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/utils/frontend_utils.py",
+          "size": 4273,
+          "sha256": "0d0ca94e0cf519e2d17f72cd1dcab6cb07aea0de48e7e792826362284ea18d30",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/utils/frontend_utils.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/utils/losses.py",
+          "size": 2121,
+          "sha256": "5cd0f7fd78ce5622c19bb9116516b705699e48c08f217b9b8aa1127f2bf95c10",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/utils/losses.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/utils/mask.py",
+          "size": 9728,
+          "sha256": "852c6e4b14201a238ab076396db599c157b2ee5a5a2aacf0f277ddce8c648976",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/utils/mask.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/utils/onnx.py",
+          "size": 2867,
+          "sha256": "1e4951180be1b8a606999e854db49aafa641cd8e3a9944122d3cc23df00a2157",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/utils/onnx.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/utils/scheduler.py",
+          "size": 24920,
+          "sha256": "9447eab84fcb71eaf6546db35156b49fe53182f244744a1dc93ebab28fa1ea34",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/utils/scheduler.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/utils/train_utils.py",
+          "size": 16626,
+          "sha256": "ab8b999fc3ef805b8e2f8981a395f25ffbcd781acde325b91e809a5e7cc7b425",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/utils/train_utils.py"
+        },
+        {
+          "path": "source/CosyVoice/cosyvoice/vllm/cosyvoice2.py",
+          "size": 4541,
+          "sha256": "96810ffb9b8b649bcacccf9685bbe91ba0efaf7e4ae7594d9961af86a701f033",
+          "url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/cosyvoice/vllm/cosyvoice2.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/LICENSE",
+          "size": 1069,
+          "sha256": "874d84104bdc7b301f369b2f2e66b31f07826a67495af909655f3699c857620d",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/LICENSE"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/app.py",
+          "size": 13992,
+          "sha256": "6c1386d553392fc5fae1a17cac7e2275dbb8e5d8def659a4cabe6e6c0abfe3ee",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/app.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/cli.py",
+          "size": 15519,
+          "sha256": "230fd22138b842b6066ff1d99f104d67f8af9d9ff3bd74892446f243872569df",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/cli.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/data/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/data/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/data/components/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/data/components/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/data/text_mel_datamodule.py",
+          "size": 7555,
+          "sha256": "4a271b2ce6112c977b2f9ab10016269c0c6f19c7bea933d721715b3df5469927",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/data/text_mel_datamodule.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/hifigan/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/hifigan/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/hifigan/config.py",
+          "size": 779,
+          "sha256": "7314bf6132bf5283b6ba66bf51ef10445b4d03a95d484b7510bdfabb6f8d8027",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/hifigan/config.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/hifigan/denoiser.py",
+          "size": 2644,
+          "sha256": "4368ee2366b7413a9c7ba7eebea5909d286857aef59155b626c432a2ac30bcb2",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/hifigan/denoiser.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/hifigan/env.py",
+          "size": 429,
+          "sha256": "42d8439aa4d6580228dad488f9aad5b5e455c672949e6f669239505675db9837",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/hifigan/env.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/hifigan/meldataset.py",
+          "size": 6786,
+          "sha256": "e0fb3435703762fd285763f209d1dca6d738959e37b69f7bf26dc13363585b17",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/hifigan/meldataset.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/hifigan/models.py",
+          "size": 11668,
+          "sha256": "2e7ec9ed8cde378877ded04a4078653dca0d7e65feffe9300644d9218258e6af",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/hifigan/models.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/hifigan/xutils.py",
+          "size": 1396,
+          "sha256": "68db58bb54b241a1ad6cdfcd9d27cb1a14e2fabff2def60a3087fb11819a0ce0",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/hifigan/xutils.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/models/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/models/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/models/baselightningmodule.py",
+          "size": 7003,
+          "sha256": "e39683d7157a02e9d9eff3ba454ebe07439a50c30d3bf8052945a9aecdc47c27",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/models/baselightningmodule.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/models/components/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/models/components/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/models/components/decoder.py",
+          "size": 14459,
+          "sha256": "7ea94a61cd3c96703aa107fdcd1b82de2f2f6ade20a3c5f434b6005318176a6b",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/models/components/decoder.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/models/components/flow_matching.py",
+          "size": 4657,
+          "sha256": "a6f2b2eeca2600749d575dda8624d864d904227e2a9f764a6cb2b89290445e6c",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/models/components/flow_matching.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/models/components/text_encoder.py",
+          "size": 14845,
+          "sha256": "4044329d407b3da06c76527e7b54d40407bdacbd8b0679a4e5b024affbc24de9",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/models/components/text_encoder.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/models/components/transformer.py",
+          "size": 13237,
+          "sha256": "66ff2092d974a99b251b9d8e5c08bbcecceaedfaf41e2bd8af2b4bc7a56dcbea",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/models/components/transformer.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/models/matcha_tts.py",
+          "size": 10059,
+          "sha256": "cdba70f67a06c11fdf1bdc812b1c6d321987827c52ecf3c4d7f7edf4a2be8cfa",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/models/matcha_tts.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/onnx/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/onnx/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/onnx/export.py",
+          "size": 5386,
+          "sha256": "55402f8916f287d5a15dac4b3d08dd40bc1a54afd964d81a58f30503650a8787",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/onnx/export.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/onnx/infer.py",
+          "size": 6293,
+          "sha256": "002823b5f31dbf3b94e1799a94d2eb79b9a4043d96f152dc2e2f1b9579e35265",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/onnx/infer.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/text/__init__.py",
+          "size": 1696,
+          "sha256": "e9dc59b06676e45be4e3f6fbdb27c0ecd55c3489c224b4a3a6f37d31cebab812",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/text/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/text/cleaners.py",
+          "size": 3560,
+          "sha256": "b78fb0b0c0507494fa275da61e25cc136ded9a93a2f29995f8691e8c355c35ff",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/text/cleaners.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/text/numbers.py",
+          "size": 2249,
+          "sha256": "370a7e1e6a9aaacb4010b56aaa532effb6e3e2a896433317166c39ea706ad61d",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/text/numbers.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/text/symbols.py",
+          "size": 635,
+          "sha256": "870efc23c26d06692b8b91e20d4402d398b637d305931589a07ba32312453f57",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/text/symbols.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/train.py",
+          "size": 4613,
+          "sha256": "78a159164692be675f30d84e01cbe9eb7929f96be3ffd204e3b980a78b071b18",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/train.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/utils/__init__.py",
+          "size": 326,
+          "sha256": "60db3dd6b8f37947154acdda663bfdb6199ae3623cd4992ccbd445de7aaebcea",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/utils/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/utils/audio.py",
+          "size": 2282,
+          "sha256": "2f741064bfcc9485d19a42356496d8ae24dec80c3d6ef5ca7f4e8abfbf9c61ca",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/utils/audio.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/utils/generate_data_statistics.py",
+          "size": 3269,
+          "sha256": "13967d4e96ba6455df48b2d0700c2183b618a8180b643908a81a06a0e6611230",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/utils/generate_data_statistics.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/utils/instantiators.py",
+          "size": 1828,
+          "sha256": "431a8e9d155a6c249ebaba4f3835ea87725267e13b9bc8ca4acc72d56bd35fe2",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/utils/instantiators.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/utils/logging_utils.py",
+          "size": 1711,
+          "sha256": "825388fc91bcfd804a1d6c03e5144a2a409ecf737b0c9947dbb573e3cc8012d5",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/utils/logging_utils.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/utils/model.py",
+          "size": 2935,
+          "sha256": "51588a1da57cf7f21e68a245c30d711d5fd14d7aafd18bdf416ab03ad9f343e2",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/utils/model.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/utils/monotonic_align/__init__.py",
+          "size": 646,
+          "sha256": "fecfc8355eef2ff37d9a162d6400c0935d42b1218ff24ca49f47c4cb233bdedb",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/utils/monotonic_align/__init__.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/utils/monotonic_align/setup.py",
+          "size": 207,
+          "sha256": "6dfd1dd1cbc645a0020b6daaab4b2a819101061cf8ab30e532a0713b24ca0b68",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/utils/monotonic_align/setup.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/utils/pylogger.py",
+          "size": 720,
+          "sha256": "61b0bc626e4766b25c0c122c40eea34a7bb263908b650475dc4fe8012f526194",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/utils/pylogger.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/utils/rich_utils.py",
+          "size": 3279,
+          "sha256": "3a3e63ae4cf9b356f74492fa9bff045e3f392d8d3bf4558294c2337ff1b0bdc7",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/utils/rich_utils.py"
+        },
+        {
+          "path": "source/CosyVoice/third_party/Matcha-TTS/matcha/utils/utils.py",
+          "size": 7159,
+          "sha256": "f9768a89bbea7fa9970a818f90d705281f189eafdb2bafd2f3e9ed521491d561",
+          "url": "https://raw.githubusercontent.com/shivammehta25/Matcha-TTS/dd9105b34bf2be2230f4aa1e4769fb586a3c824e/matcha/utils/utils.py"
+        }
+      ],
+      "device_hint": "CPU / GPU",
+      "min_ram_mb": 8192,
+      "runtime": "speech-pytorch",
+      "code_revision": "074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc",
+      "import_paths": [
+        "source/CosyVoice",
+        "source/CosyVoice/third_party/Matcha-TTS"
+      ],
+      "weights_path": "weights"
+    },
+    {
+      "id": "indextts2.5",
+      "name": "IndexTTS 2.5",
+      "kind": "tts",
+      "version": "c39ce5ba981572cb",
+      "source": "https://huggingface.co/IndexTeam/IndexTTS-2.5/tree/c39ce5ba981572cb187443877ff559dfb246ce63",
+      "license": "other",
+      "files": [
+        {
+          "path": "weights/LICENSE",
+          "size": 10553,
+          "sha256": "cc7da9ea0f8a97ef15ab3bf0389e636ce79ffca1aef5489520796ac87d87a87b",
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/LICENSE"
+        },
+        {
+          "path": "weights/README.md",
+          "size": 4272,
+          "sha256": "d21e2ed55013ce0c456b9aa6d4fab7222365bfad10dd839155da0ce36fa93001",
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/README.md"
+        },
+        {
+          "path": "weights/codec.pth",
+          "size": 607290935,
+          "sha256": "d15cbed16a40f478438c961fb043f68dfa6353bf56c966761315db3433e9722c",
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/codec.pth"
+        },
+        {
+          "path": "weights/config.yaml",
+          "size": 2860,
+          "sha256": "18adf417be3e8f5e2e48e30f7420c719170a6870619436250f360d626877870e",
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/config.yaml"
+        },
+        {
+          "path": "weights/feat1.pt",
+          "size": 57170,
+          "sha256": "f219cb447d80216ba615666da2ff8d63ac544eee26657f3a7b278692bf7a67c4",
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/feat1.pt"
+        },
+        {
+          "path": "weights/feat2.pt",
+          "size": 374866,
+          "sha256": "9c4292e96dee535aea9a6206e9a0c856dd578dde9212acdb16dd3ada4d12bf80",
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/feat2.pt"
+        },
+        {
+          "path": "weights/gpt.pth",
+          "size": 3259599833,
+          "sha256": "43a8f4c30eccdf201958d3b9713511482c19d56dc20b0b1c4ee1e6b080b19d85",
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/gpt.pth"
+        },
+        {
+          "path": "weights/multilingual_zh_ja_yue_char_del.tiktoken",
+          "size": 907395,
+          "sha256": "747979631e813193436aabcff7c1c235d37de8097b71c563ec8b63b7a515c718",
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/multilingual_zh_ja_yue_char_del.tiktoken"
+        },
+        {
+          "path": "weights/s2mel.pth",
+          "size": 414908601,
+          "sha256": "9b1b0003fc189c94cc349758d7ebc25f903b7eb2de4602879959cc64ce816456",
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/s2mel.pth"
+        },
+        {
+          "path": "weights/wav2vec2bert_stats.pt",
+          "size": 9343,
+          "sha256": "c9c176c2b8850ab2e3ba828bbfa969deaf4566ce55db5f2687b8430b87526ad2",
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/wav2vec2bert_stats.pt"
+        },
+        {
+          "path": "weights/hf_cache/w2v-bert-2.0/config.json",
+          "size": 1874,
+          "sha256": "f5572bd5998b68182e9c328a43127ed21fed687f6910497136b91a4e3b0e3675",
+          "url": "https://huggingface.co/facebook/w2v-bert-2.0/resolve/da985ba0987f70aaeb84a80f2851cfac8c697a7b/config.json"
+        },
+        {
+          "path": "weights/hf_cache/w2v-bert-2.0/model.safetensors",
+          "size": 2322063736,
+          "sha256": "eb890c9660ed6e3414b6812e27257b8ce5454365d5490d3ad581ea60b93be043",
+          "url": "https://huggingface.co/facebook/w2v-bert-2.0/resolve/da985ba0987f70aaeb84a80f2851cfac8c697a7b/model.safetensors"
+        },
+        {
+          "path": "weights/hf_cache/w2v-bert-2.0/preprocessor_config.json",
+          "size": 275,
+          "sha256": "8e6281aad64f97e40534135a59dcc5d33571efae376f2a25adf5551951897ab4",
+          "url": "https://huggingface.co/facebook/w2v-bert-2.0/resolve/da985ba0987f70aaeb84a80f2851cfac8c697a7b/preprocessor_config.json"
+        },
+        {
+          "path": "weights/hf_cache/bigvgan/bigvgan_generator.pt",
+          "size": 449228171,
+          "sha256": "e95ba25972d3de0628d99cd156e9315a9c018899bf739988959ebe3544080ced",
+          "url": "https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x/resolve/633ff708ed5b74903e86ff1298cf4a98e921c513/bigvgan_generator.pt"
+        },
+        {
+          "path": "weights/hf_cache/bigvgan/config.json",
+          "size": 1405,
+          "sha256": "88a1f47acf747db0b21e97a389d838566147f7a5464583ff5c8d819d870f03ee",
+          "url": "https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x/resolve/633ff708ed5b74903e86ff1298cf4a98e921c513/config.json"
+        },
+        {
+          "path": "weights/hf_cache/campplus_cn_common.bin",
+          "size": 28036335,
+          "sha256": "3388cf5fd3493c9ac9c69851d8e7a8badcfb4f3dc631020c4961371646d5ada8",
+          "url": "https://huggingface.co/funasr/campplus/resolve/e4b6ede7ce16997aff4ae69fbca1f0175e2afede/campplus_cn_common.bin"
+        },
+        {
+          "path": "source/IndexTTS/LICENSE",
+          "size": 10554,
+          "sha256": "53875532237e0a97b17a41721556ff57e93193fc566e48c3a0febe6e35bb5343",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/LICENSE"
+        },
+        {
+          "path": "source/IndexTTS/LICENSE_ZH.txt",
+          "size": 7336,
+          "sha256": "366175ecf329274358801b8365922677c52f25e643dcf00f0bc15857b5b2777f",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/LICENSE_ZH.txt"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/ECAPA_TDNN.py",
+          "size": 19031,
+          "sha256": "45022881dcd7db580b8733bd5bf9706ed59b9a4d84824d8f59d4190e9acc2094",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/ECAPA_TDNN.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/activations.py",
+          "size": 4513,
+          "sha256": "58987b1e0ba436f8c54b879b94655bad1027152599a43c376b8bdcbea11213dd",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/activations.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/alias_free_activation/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/alias_free_activation/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/alias_free_activation/cuda/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/alias_free_activation/cuda/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/alias_free_activation/cuda/activation1d.py",
+          "size": 2588,
+          "sha256": "f20cea4566cdd46c2e7ba5fc433b5a1e3645059280fa53817fb2e9b6ae2352a4",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/alias_free_activation/cuda/activation1d.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/alias_free_activation/cuda/load.py",
+          "size": 4074,
+          "sha256": "c0cafb70a2a055d6be1c9cd6ff17a36dc744f55cf078cc1f51e3d76943f0e176",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/alias_free_activation/cuda/load.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/alias_free_activation/torch/__init__.py",
+          "size": 200,
+          "sha256": "97ec9153e7f800af209a6899e78884647cdcd960fbe909e4276db1523ba0fbbc",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/alias_free_activation/torch/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/alias_free_activation/torch/act.py",
+          "size": 826,
+          "sha256": "cc4050126fc8a24e244f6d593412bf7cc17ce13a94891b3631ed3f60417eb6d3",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/alias_free_activation/torch/act.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/alias_free_activation/torch/filter.py",
+          "size": 3402,
+          "sha256": "11678b029b4887625065ecadf24a65cf0f25c31d8adfdeb845a2a31dfc1d86d9",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/alias_free_activation/torch/filter.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/alias_free_activation/torch/resample.py",
+          "size": 1813,
+          "sha256": "340f4eb06a2e252ae9e6b53c05cb2b4039ac3e32ac5a9dcd694a1c49925bc4ee",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/alias_free_activation/torch/resample.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/alias_free_torch/__init__.py",
+          "size": 200,
+          "sha256": "97ec9153e7f800af209a6899e78884647cdcd960fbe909e4276db1523ba0fbbc",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/alias_free_torch/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/alias_free_torch/act.py",
+          "size": 855,
+          "sha256": "791b7d36d693c9897729a99aa41084bd6db1ca4f7b4ebc1d1fcaed969ca2d899",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/alias_free_torch/act.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/alias_free_torch/filter.py",
+          "size": 3457,
+          "sha256": "3da8ec47eb90fdfd2da4e1e25efa8086d0ff899cd84460bfe3f9f60bdda2b163",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/alias_free_torch/filter.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/alias_free_torch/resample.py",
+          "size": 1841,
+          "sha256": "11fb082f2453f1a53c7f35bee5e3ea91b711a0d1148b05e659c55e9440ed9cc8",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/alias_free_torch/resample.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/bigvgan.py",
+          "size": 19279,
+          "sha256": "bb4ae1a7e6ec85032ae728bef3e834308b6d236bc563d874d656c7d611906003",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/bigvgan.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/models.py",
+          "size": 18378,
+          "sha256": "f033f9837e848d3f773dbc51082579e19c6d3ff82ea2a57e2b77ed8778dbff4f",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/models.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/nnet/CNN.py",
+          "size": 16111,
+          "sha256": "4733555f3ffce28d1821f7390cbec56c5ac2bb53dfa8f60c2668883b7e4cf5dd",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/nnet/CNN.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/nnet/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/nnet/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/nnet/linear.py",
+          "size": 2310,
+          "sha256": "db3d879e3b49c0e5317f7e9d16a974723895bf4172182704c79b8fdfdc12aa76",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/nnet/linear.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/nnet/normalization.py",
+          "size": 19503,
+          "sha256": "60892f40f9298354d71aae491e7ecbb70061399a7ab01054355fec34b5db0846",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/nnet/normalization.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/BigVGAN/utils.py",
+          "size": 2552,
+          "sha256": "d5ba1f693aaee797c7edc763ecfb00acc87984d367984a9cc1ce7b74a799d40a",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/BigVGAN/utils.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/accel/__init__.py",
+          "size": 325,
+          "sha256": "50287c3eb1c1906832f4a2f6879f20fbee7977153efe46d611b1672e03320c09",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/accel/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/accel/accel_engine.py",
+          "size": 24766,
+          "sha256": "0eb67ae4d7acd617c579e3ab7203374e959d932052f02c5c94547f3cf3b5d7a1",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/accel/accel_engine.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/accel/attention.py",
+          "size": 4351,
+          "sha256": "de13d1430239aff7155702c436aaefa93d850617c30c8ffb35f5b3658691520c",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/accel/attention.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/accel/gpt2_accel.py",
+          "size": 6380,
+          "sha256": "5302b954fb89dd1a1df76843ea1301a07d836f7f5c5fc1d73a4e9bd0f7890b00",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/accel/gpt2_accel.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/accel/kv_manager.py",
+          "size": 6922,
+          "sha256": "37fbc281fe30b0e40d6078f7380b665611a099fd2b35a59795b716e02efc88b5",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/accel/kv_manager.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/cli.py",
+          "size": 5004,
+          "sha256": "b1e9e7825f7bfcfb17c1c10755b0599d9985d24b450bb3e5e4f7b4487e22f034",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/cli.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/cli_v2.py",
+          "size": 65238,
+          "sha256": "72a29e3d120e425a0b25dbcbbd90b13c848bfd3f01fbcf58f5579e9179c21e06",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/cli_v2.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/codec/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/codec/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/codec/amphion_codec/quantize/__init__.py",
+          "size": 512,
+          "sha256": "3fcbdb70f742b9f43f368f086a74ec1ae15eabd8a66916f63cafb216cb5147a7",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/codec/amphion_codec/quantize/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/codec/amphion_codec/quantize/factorized_vector_quantize.py",
+          "size": 5035,
+          "sha256": "9e180c4e9cd8f937b2302b5273845528c353b345c58ff620b64cc88ae0261f93",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/codec/amphion_codec/quantize/factorized_vector_quantize.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/codec/amphion_codec/quantize/lookup_free_quantize.py",
+          "size": 2201,
+          "sha256": "b6baa46ff6d81b821fe0328b52418da88a88d313cfc97e9d8c327ccd0227d86c",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/codec/amphion_codec/quantize/lookup_free_quantize.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/codec/amphion_codec/quantize/residual_vq.py",
+          "size": 5784,
+          "sha256": "6728aef885b7b6facd71723a67b15a50422a3a39a3fd688538a23e7ef707331f",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/codec/amphion_codec/quantize/residual_vq.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/codec/amphion_codec/quantize/vector_quantize.py",
+          "size": 13633,
+          "sha256": "41d5d508dcbb074baab7010221d7740b41245c7c3adaef680b85d29208666548",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/codec/amphion_codec/quantize/vector_quantize.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/codec/kmeans/vocos.py",
+          "size": 30346,
+          "sha256": "635cf8930ab78fd78afeee50c6751094b00a548d2249083cf38a02a8f56b4bfc",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/codec/kmeans/vocos.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/codec/maskgct_codec.py",
+          "size": 203,
+          "sha256": "6ea7c23e4eb7981eafbde58fe033b81978c433d8c450f0c600f0323517c80fae",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/codec/maskgct_codec.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/codec/models.py",
+          "size": 8326,
+          "sha256": "97866ed6720eb47a86503311fc29a58a55c68085e6d94a0a086f513af89a4704",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/codec/models.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/conformer/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/conformer/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/conformer/attention.py",
+          "size": 14071,
+          "sha256": "e1fac7f8d0a3f13f50fc00d63379164119b24447f778593c9365d1825c9e7052",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/conformer/attention.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/conformer/embedding.py",
+          "size": 6118,
+          "sha256": "e62bebe30baf5aa716b42c82a28d5fb3d56cba97300b282763414a7574dcd2df",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/conformer/embedding.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/conformer/subsampling.py",
+          "size": 11929,
+          "sha256": "1f087f3ab5d5277466534d081ce3d6fa550ea9dc578411fb69febe4173260442",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/conformer/subsampling.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/conformer_encoder.py",
+          "size": 20241,
+          "sha256": "238140454c3314e55c0048e014c1551d20d9cab9fed5311f78e810efd768cc45",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/conformer_encoder.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/model.py",
+          "size": 35260,
+          "sha256": "903a595656cf0095cbddfef6f2f1df8935169a6964d9ed2e551c98c4825daa8c",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/model.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/model_v2.py",
+          "size": 42142,
+          "sha256": "8bbe7471d89bf8b1c1b11b98f305bf69fa96191329c8cc9a1da102a830716c0b",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/model_v2.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/model_v2_5.py",
+          "size": 38903,
+          "sha256": "3dcfc407f45cb4461c99ef554bfccb396725a5ff18604893f2ec3afb56df1d8b",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/model_v2_5.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/perceiver.py",
+          "size": 9407,
+          "sha256": "c507764691bc27ac46f7fdff978831884a431924e2798c9e98eea5381f200537",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/perceiver.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/transformers_beam_search.py",
+          "size": 49570,
+          "sha256": "d91e7239867db4312c257d80a7a264f237f0c2b0e0b119fe39cc42fcdcc269cd",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/transformers_beam_search.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/transformers_generation_utils.py",
+          "size": 253891,
+          "sha256": "03bec1423c0bbe26b9322fcd15ab30cd9a05a3c26a249cf89a4ab736388c567d",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/transformers_generation_utils.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/transformers_gpt2.py",
+          "size": 85764,
+          "sha256": "42ada1d6fddf74754b7f48e690b682060d13b876d469e913dbeb249d4611b0e1",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/transformers_gpt2.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/gpt/transformers_modeling_utils.py",
+          "size": 274934,
+          "sha256": "871c68a7466e4550dfde302176281aa3ceb2f9e5894cf02d8cc3bf77048f62a5",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/gpt/transformers_modeling_utils.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/infer.py",
+          "size": 34915,
+          "sha256": "73f2d8ed5f01d047c686f852c2b930410e900e74d75be89d1a7921dcf13063bd",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/infer.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/infer_v2.py",
+          "size": 43052,
+          "sha256": "a6ab5369cf627e00032e0654ef495731155cc79498ebcede531e28e0b72c81d8",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/infer_v2.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/infer_v2_5.py",
+          "size": 49695,
+          "sha256": "b69330053ed603530458bb181029b3abb4c83dc57c811e70837c04141293b56a",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/infer_v2_5.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/__init__.py",
+          "size": 307,
+          "sha256": "15575d30dc28e2ac6978b1c4f67b3b79a8e4198e1645ef7ccbfb2706b988b5fe",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/__main__.py",
+          "size": 666,
+          "sha256": "94c3f738a79bdccaebfc1c92b015a46ddb9d9bbba1a41c29ef38d082b61dce6e",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/__main__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/model/__init__.py",
+          "size": 117,
+          "sha256": "19c5e09cc2236f7b32c3dcc4b8aaedf84e22bac100ddbd62fdd82b7bc702655b",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/model/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/model/base.py",
+          "size": 9384,
+          "sha256": "2361726838faae352f1265d514e3e2f8d978a2b278dcf66bb5799dfbd2ba7b83",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/model/base.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/model/dac.py",
+          "size": 12833,
+          "sha256": "acd63255f50d0dbb6ce34db655ff117cafa593e58bd5882a280e8b3dcfc02a07",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/model/dac.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/model/discriminator.py",
+          "size": 7053,
+          "sha256": "77468a42a6b899cb378c621422f7795676825860a540a48bea52d4e3f43e2a83",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/model/discriminator.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/model/encodec.py",
+          "size": 13080,
+          "sha256": "76d8607a47fe976b1bd72539bad49c1868e1892b08a2c22c515c50bacd650d01",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/model/encodec.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/nn/__init__.py",
+          "size": 63,
+          "sha256": "9c3815860820bc1ef0e10c71140c90634b9eeef2bbf2a00445763ed4552c149a",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/nn/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/nn/layers.py",
+          "size": 809,
+          "sha256": "ec2649649d787b166a138d5ad9dcd585aeabbcd93670771b30cbbbab731c4b63",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/nn/layers.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/nn/loss.py",
+          "size": 12042,
+          "sha256": "47900c21076f850bf07fa9aa8b8a66b53613801d9ca3861867c35b3a6c8b3e70",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/nn/loss.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/nn/quantize.py",
+          "size": 11993,
+          "sha256": "3f0c27947ff2399a2866492a1ccb22172bdf353cbc8aa1d41be1158d5e292209",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/nn/quantize.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/utils/__init__.py",
+          "size": 3312,
+          "sha256": "dd72cd0a2f40303a36c1ca9839c813ea588a68e960ab0d5970d3f15996060c7d",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/utils/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/utils/decode.py",
+          "size": 2998,
+          "sha256": "8b64cc408e25f5b2dbab01cf787d456552901e887a88c8aae53ee3f6832bab17",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/utils/decode.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/dac/utils/encode.py",
+          "size": 3117,
+          "sha256": "6052fd02ba78c37401c2b5087a8b50ea9e2be806975c317ba8534cdfc47f0f4c",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/dac/utils/encode.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/.ipynb_checkpoints/audio-checkpoint.py",
+          "size": 2419,
+          "sha256": "370ed819ace6b31a99eaee60fbe91941d665a665c37ab9319836dd1f9ff94ab0",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/.ipynb_checkpoints/audio-checkpoint.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/.ipynb_checkpoints/commons-checkpoint.py",
+          "size": 20488,
+          "sha256": "08e3f21e9cd29f477bd3d862b6aa14c40bd5491749ca95b9990a08f7df3beec8",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/.ipynb_checkpoints/commons-checkpoint.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/.ipynb_checkpoints/diffusion_transformer-checkpoint.py",
+          "size": 11760,
+          "sha256": "38711fb6ae447413607c6fcc4bb20ca91e807305504e321010182077d6c2f005",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/.ipynb_checkpoints/diffusion_transformer-checkpoint.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/.ipynb_checkpoints/flow_matching-checkpoint.py",
+          "size": 6744,
+          "sha256": "b33d43451a57af2a1a0d66e57b6aadf9284adcad17e0ef92aa6cb9f2fb8fac65",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/.ipynb_checkpoints/flow_matching-checkpoint.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/.ipynb_checkpoints/length_regulator-checkpoint.py",
+          "size": 6071,
+          "sha256": "7b27440e9b25ea6b77b88910cf45e358e8e76b264acc9108e68ccebbd1bb5dfb",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/.ipynb_checkpoints/length_regulator-checkpoint.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/alias_free_torch/__init__.py",
+          "size": 157,
+          "sha256": "7e8bdb5ab07a79de67d1490600964f60b0a995c6691217f4fcfb76e175a0b79a",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/alias_free_torch/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/alias_free_torch/act.py",
+          "size": 782,
+          "sha256": "2add4414a8dec8b5ffe55e55dc26c17aeba31224b5a5fb3959cc82804454b558",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/alias_free_torch/act.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/alias_free_torch/filter.py",
+          "size": 3244,
+          "sha256": "674e5fafffd4bc46b58a7de3590b3bc6c2228930e70b50f4ceea014367438dce",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/alias_free_torch/filter.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/alias_free_torch/resample.py",
+          "size": 1788,
+          "sha256": "9341fe6756d3c8222ecbd4155366ee12aefab8c98ab0cd9badc34a0c6d7eb755",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/alias_free_torch/resample.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/audio.py",
+          "size": 2419,
+          "sha256": "370ed819ace6b31a99eaee60fbe91941d665a665c37ab9319836dd1f9ff94ab0",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/audio.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/activations.py",
+          "size": 4504,
+          "sha256": "3ba94028aebabfc994bcd746bf9cbe92ecace528434c922c480be6ada182cad6",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/activations.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/alias_free_activation/cuda/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/alias_free_activation/cuda/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/alias_free_activation/cuda/activation1d.py",
+          "size": 2515,
+          "sha256": "b2ddcfad6c9a51a23a435551d3c9793cd4f517bbe5e739676f933b5004bd2b53",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/alias_free_activation/cuda/activation1d.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/alias_free_activation/cuda/load.py",
+          "size": 1590,
+          "sha256": "f992281aa5b47631ac071d100c361a3743b531aea50145931e4601eeae4af382",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/alias_free_activation/cuda/load.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/alias_free_activation/torch/__init__.py",
+          "size": 200,
+          "sha256": "2e3138e1052e377ba2e51ea59c7d5d255a519559001757af21dbec4cb9c22471",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/alias_free_activation/torch/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/alias_free_activation/torch/act.py",
+          "size": 825,
+          "sha256": "0b92766f905251989a160f265f672cf76bce1726f7e1d6df63fa7fc403970219",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/alias_free_activation/torch/act.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/alias_free_activation/torch/filter.py",
+          "size": 3401,
+          "sha256": "acf2257276e617dd3161e53abc0a1582e586a3d2d618a43235c7f83818b4e179",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/alias_free_activation/torch/filter.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/alias_free_activation/torch/resample.py",
+          "size": 1831,
+          "sha256": "2c7d4c3e897a0b49d2028dc738145429d3e11871bb3c15e8f610c63728ef1bf2",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/alias_free_activation/torch/resample.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/bigvgan.py",
+          "size": 17589,
+          "sha256": "e8d71c23f98112304c1f9a9eab6d5ae851aa786eb2cd97df0ebf9d36ce2800e1",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/bigvgan.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/config.json",
+          "size": 1405,
+          "sha256": "88a1f47acf747db0b21e97a389d838566147f7a5464583ff5c8d819d870f03ee",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/config.json"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/env.py",
+          "size": 510,
+          "sha256": "54ae665797fbb20ed3fc9b856be688f6b8a903b0bed8ff7edabff81dd9cdcd33",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/env.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/meldataset.py",
+          "size": 11420,
+          "sha256": "691e8413fb4c65ee3f603a43b19bdd69652a06a150ce82e72c43363cd268dfc6",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/meldataset.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/bigvgan/utils.py",
+          "size": 2564,
+          "sha256": "82217648462eda8b9a2da977eb73f904d627d66f406f9eb70694e4b66146524d",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/bigvgan/utils.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/campplus/DTDNN.py",
+          "size": 4384,
+          "sha256": "c04f4eb38bb5b3a0031a01fbcd71cf2f5842aec7973448da5aaf9882b81fa831",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/campplus/DTDNN.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/campplus/classifier.py",
+          "size": 1798,
+          "sha256": "2c1e9adfcda423bd9fcda07f8d8ef00447c09d09763b2d13f8e5ca6db88d0f70",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/campplus/classifier.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/campplus/layers.py",
+          "size": 9099,
+          "sha256": "51206e7e288635b5c532dbf2c461bb33483961275797d7265af7a906427fa4f3",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/campplus/layers.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/commons.py",
+          "size": 21564,
+          "sha256": "988945a9881fb03387e1e526b6d2bbe86b7bda6342229674a4d3d81c486e8812",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/commons.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/diffusion_transformer.py",
+          "size": 11750,
+          "sha256": "2582e9d57896fe2766d535d65eff07907a03b644bf8e21ea8f833e56d9191fdc",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/diffusion_transformer.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/encodec.py",
+          "size": 12030,
+          "sha256": "83dc7d439fa150e8cc8ca1bb071b98ca91109b7fbb08a322ad34d8f4c3efd3dc",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/encodec.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/flow_matching.py",
+          "size": 7372,
+          "sha256": "7f9e3f56d79f7bcc3c813d70a1736aeaa101927339622e9db056f1bf123dba41",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/flow_matching.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/gpt_fast/.ipynb_checkpoints/model-checkpoint.py",
+          "size": 14662,
+          "sha256": "e3f8b2882bc9868f1b02120a620b8f470113d5be4dc6fbb5cfa83b020a3bbf5c",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/gpt_fast/.ipynb_checkpoints/model-checkpoint.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/gpt_fast/generate.py",
+          "size": 17662,
+          "sha256": "ac3603db88518ff8f987d73922f5410efb14bf7ab3996e28053bdda86e88a924",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/gpt_fast/generate.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/gpt_fast/model.py",
+          "size": 14662,
+          "sha256": "e3f8b2882bc9868f1b02120a620b8f470113d5be4dc6fbb5cfa83b020a3bbf5c",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/gpt_fast/model.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/gpt_fast/quantize.py",
+          "size": 25606,
+          "sha256": "d7cd5f5644d0da2eabf4da565bf478367ec4886cb8ce3362051b5052687dd9f7",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/gpt_fast/quantize.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/hifigan/f0_predictor.py",
+          "size": 1976,
+          "sha256": "e137abd569ee49103bc32b7341f12dbbedcfb80f90ae0df2c11e47b3b7ec57be",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/hifigan/f0_predictor.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/hifigan/generator.py",
+          "size": 16809,
+          "sha256": "a5b3891b570afaf2ad221810c54940374c1cbc6c85804b7f662f7e81b3016de8",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/hifigan/generator.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/layers.py",
+          "size": 13454,
+          "sha256": "5f7335e967b23ae8571c421164681a6582284d4b3839900edc0237a408f34705",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/layers.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/length_regulator.py",
+          "size": 6101,
+          "sha256": "654b511ac38da234bb0fd2954151604cd0f799ce24cd5457c86116ad133878b8",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/length_regulator.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/openvoice/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/openvoice/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/openvoice/api.py",
+          "size": 7116,
+          "sha256": "82b7f3f571bef6e284305234724578bf3eb89420fa3a37d60825413db0fd2231",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/openvoice/api.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/openvoice/attentions.py",
+          "size": 16352,
+          "sha256": "528e153fa5d615f8bf891e0603727a66f0837aa13e7ba6ea86884a619e5d789b",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/openvoice/attentions.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/openvoice/checkpoints_v2/converter/config.json",
+          "size": 838,
+          "sha256": "9dfff60350b8c63f2c664efd92a61b2516efb22671466960f0e5dfebd881fa47",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/openvoice/checkpoints_v2/converter/config.json"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/openvoice/commons.py",
+          "size": 4956,
+          "sha256": "046943d265635c3d9c99195562e703564a26300981a7db5b87d4cd3fd180ae0d",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/openvoice/commons.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/openvoice/mel_processing.py",
+          "size": 6106,
+          "sha256": "0fd8fb895b5eb7ecdb479824240bc7d373bd9568c65dbd80bda870973c85b79f",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/openvoice/mel_processing.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/openvoice/models.py",
+          "size": 16768,
+          "sha256": "65bb7a4ca2cb4ef03913542df9dc1c65f078b1586baaa5103ae6f19747ceea6c",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/openvoice/models.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/openvoice/modules.py",
+          "size": 18975,
+          "sha256": "4e93492177167fab16f9941c7fa0e20df0b2251508103f878c14dbf5b0c3d1d2",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/openvoice/modules.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/openvoice/openvoice_app.py",
+          "size": 11624,
+          "sha256": "e11742ebb2e1a88c338763719c7b622534452de3b3cf455ad3db30d048cc749b",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/openvoice/openvoice_app.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/openvoice/se_extractor.py",
+          "size": 5163,
+          "sha256": "d7e134ffd3993473479e8e8c299c2d8e2fd2f7ede7a71dbfd84fbc3ef4b9c768",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/openvoice/se_extractor.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/openvoice/transforms.py",
+          "size": 7253,
+          "sha256": "e6798989a0d75cbec45e7e24e3697e1c4886b3664c6a80a452645ef1d2a93f9c",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/openvoice/transforms.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/openvoice/utils.py",
+          "size": 5746,
+          "sha256": "a71ca4abd125da977f16504cdadae867337bc93f7fdeca67b84fcda09ef06d02",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/openvoice/utils.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/quantize.py",
+          "size": 8336,
+          "sha256": "dd5b4b5704e9f26395774670f0f7a4ba21fd6db32fdbeb0b96021ae6dd96b8e0",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/quantize.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/rmvpe.py",
+          "size": 22451,
+          "sha256": "20ce595663be6320216310ca4db41854178c1af9b2e482162e9c230241d96b7f",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/rmvpe.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/vocos/__init__.py",
+          "size": 54,
+          "sha256": "202d1aa58c68b4a85bc781272eb861ed4e3887c78755dd83bf80d531786e3f2a",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/vocos/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/vocos/heads.py",
+          "size": 6363,
+          "sha256": "7e7ddce112a07939aa28202b9d35bca3e14d886276a43b1c0758b38b94d23dc6",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/vocos/heads.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/vocos/helpers.py",
+          "size": 1906,
+          "sha256": "8d038968751dfe4c5d77121c7807214fa0db7acd3d399e06b740b5876a4d98b2",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/vocos/helpers.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/vocos/loss.py",
+          "size": 4130,
+          "sha256": "cef1f840e2e8410466fbce869c0394c0fece9a5a797e7475f305d78a9e2f93b9",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/vocos/loss.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/vocos/models.py",
+          "size": 4544,
+          "sha256": "3b9d0c0c3e28ffdc2121597ddeec0ab5da071f2ebbe096df4cfe0e2976d8d5dd",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/vocos/models.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/vocos/modules.py",
+          "size": 7832,
+          "sha256": "1132b0081333cc4abe1c36b2bd709185ceaa243519ea8903bec7ab08e67d5d64",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/vocos/modules.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/vocos/pretrained.py",
+          "size": 1840,
+          "sha256": "bb8337590458df1c69b5cf4f86dd9144879b045b1a0ee46673211b2daa03e2bd",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/vocos/pretrained.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/vocos/spectral_ops.py",
+          "size": 8081,
+          "sha256": "5577771daae83a9ffc6df3f1a3ce7f3f9c2543562c8ca3f5aff740ee2b515682",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/vocos/spectral_ops.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/modules/wavenet.py",
+          "size": 6473,
+          "sha256": "729b1a7039770b3fb3938be66492a26ced13edd260d5210c8ce2261215fdc9bf",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/modules/wavenet.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/optimizers.py",
+          "size": 3070,
+          "sha256": "b6e738eb2a17e8878a2165edf36952c4962db3ed431e260f7f51042bcf8ca1a8",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/optimizers.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/s2mel/wav2vecbert_extract.py",
+          "size": 5223,
+          "sha256": "ad71abd468f55da89ea8e007ab1884757198c0c8bab8416a7a8bbdf5e6e6ca74",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/s2mel/wav2vecbert_extract.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/arch_util.py",
+          "size": 4047,
+          "sha256": "782821547487ad815f468bde82b5f13df953d8647da68c628e5055108c95b405",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/arch_util.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/checkpoint.py",
+          "size": 1470,
+          "sha256": "ffed81f111f657a8ba41dc8c171d661c7bd6f61546d6958f4aebf48e8a94cdb7",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/checkpoint.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/common.py",
+          "size": 8725,
+          "sha256": "ba981ca5808641fecc542c7628c5ab80356591c03bef568dc679551c50fa06b3",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/common.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/examples_downloader.py",
+          "size": 5425,
+          "sha256": "eb14468e63a688bf8aef919cd330de05b1b9830e4266e6fdb113a6b2acbe764d",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/examples_downloader.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/feature_extractors.py",
+          "size": 1748,
+          "sha256": "23b507b7fae9b72508e83437aa8ba0be7ee51abe16eb1e3aef64b287a1827f14",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/feature_extractors.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/front.py",
+          "size": 33969,
+          "sha256": "df62a817c3e1b540ed62645850278df0463f934c562c1f3f50b85c2c05fc543d",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/front.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/ja_g2p.py",
+          "size": 4796,
+          "sha256": "ac58698c2b6a9163dde4ba841b7ef52c4c86dd02dd19b8d3c28a09a42e98c886",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/ja_g2p.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/amphion_codec/codec.py",
+          "size": 13709,
+          "sha256": "f4da20a863d02f29d83066ad23b17853c15db6812fb3317d67c5e5c9e5a49430",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/amphion_codec/codec.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/amphion_codec/quantize/__init__.py",
+          "size": 596,
+          "sha256": "e88b0f3e92107ed3a22ef01c8404a45290500cf17454f79ba256439a78bb0305",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/amphion_codec/quantize/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/amphion_codec/quantize/factorized_vector_quantize.py",
+          "size": 5035,
+          "sha256": "9e180c4e9cd8f937b2302b5273845528c353b345c58ff620b64cc88ae0261f93",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/amphion_codec/quantize/factorized_vector_quantize.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/amphion_codec/quantize/lookup_free_quantize.py",
+          "size": 2201,
+          "sha256": "b6baa46ff6d81b821fe0328b52418da88a88d313cfc97e9d8c327ccd0227d86c",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/amphion_codec/quantize/lookup_free_quantize.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/amphion_codec/quantize/residual_vq.py",
+          "size": 5847,
+          "sha256": "4f985d53967dacde59f3331605a3e2dd617536a47e0c7147fc02e40a7f13cf8f",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/amphion_codec/quantize/residual_vq.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/amphion_codec/quantize/vector_quantize.py",
+          "size": 13633,
+          "sha256": "41d5d508dcbb074baab7010221d7740b41245c7c3adaef680b85d29208666548",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/amphion_codec/quantize/vector_quantize.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/amphion_codec/vocos.py",
+          "size": 31452,
+          "sha256": "c4b0539755d51eaebb0594018dec06d728942cfbeaccb9dcd5ac92693993fd62",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/amphion_codec/vocos.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/codec_dataset.py",
+          "size": 9191,
+          "sha256": "b3ec576f4c18c211352b70de0c7aadeb885e80108305b34fb3afb9a402523ad5",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/codec_dataset.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/codec_inference.py",
+          "size": 19258,
+          "sha256": "3e31db8c4cb7c2d75458dadfe696cdb304ec4c856acd9a0a181996faa6c2e85a",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/codec_inference.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/codec_sampler.py",
+          "size": 4506,
+          "sha256": "48b1bad2fb58af47a6a66c6f9de512c1b6d4f598ebb8c1cd5576807a86097deb",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/codec_sampler.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/codec_trainer.py",
+          "size": 5657,
+          "sha256": "716e03c7d1505d49dac52768f06682fb2b9bd1fa813c8a9d540362ac13c263df",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/codec_trainer.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/alias_free_torch/__init__.py",
+          "size": 157,
+          "sha256": "7e8bdb5ab07a79de67d1490600964f60b0a995c6691217f4fcfb76e175a0b79a",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/alias_free_torch/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/alias_free_torch/act.py",
+          "size": 782,
+          "sha256": "2add4414a8dec8b5ffe55e55dc26c17aeba31224b5a5fb3959cc82804454b558",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/alias_free_torch/act.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/alias_free_torch/filter.py",
+          "size": 3244,
+          "sha256": "674e5fafffd4bc46b58a7de3590b3bc6c2228930e70b50f4ceea014367438dce",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/alias_free_torch/filter.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/alias_free_torch/resample.py",
+          "size": 1788,
+          "sha256": "9341fe6756d3c8222ecbd4155366ee12aefab8c98ab0cd9badc34a0c6d7eb755",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/alias_free_torch/resample.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/facodec_dataset.py",
+          "size": 3533,
+          "sha256": "3afd8eeb7cab654cb91061114c3ff1052bceff32ef567ec310f12e42142501b3",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/facodec_dataset.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/facodec_inference.py",
+          "size": 4555,
+          "sha256": "ec6f9d6d56d7eb009913f7867db41eae02dbb33fd322157624cf0a5ea228ac54",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/facodec_inference.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/facodec_trainer.py",
+          "size": 29083,
+          "sha256": "0fa38c9013da0fcec551ab698e382cd10e3939d49e6ef2eca728077efd65b970",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/facodec_trainer.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/modules/JDC/__init__.py",
+          "size": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/modules/JDC/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/modules/JDC/model.py",
+          "size": 8013,
+          "sha256": "11a0d2f30d663b32aea8c1815d7eb5abbeddc8b1dff2965ca2257171d8645dbf",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/modules/JDC/model.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/modules/attentions.py",
+          "size": 15103,
+          "sha256": "30aed2ae5427aa08d72b1e2c68c35efc62868672f5dcdad7fb7f274b938c531c",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/modules/attentions.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/modules/commons.py",
+          "size": 9518,
+          "sha256": "b153bdb2a69ab271b7a2738660b245b6547eaf251df6632a35ade46aa8b5b7a6",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/modules/commons.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/modules/gradient_reversal.py",
+          "size": 859,
+          "sha256": "8d727bbb012ee5275ad4c823ac747a86db88a69faf393b04b9a46c7408c85ebf",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/modules/gradient_reversal.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/modules/layers.py",
+          "size": 14047,
+          "sha256": "dcce463f9b2f25e9986decbb47f6867deae61ba37d2e24f70e172b0efdf54423",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/modules/layers.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/modules/quantize.py",
+          "size": 24855,
+          "sha256": "144327cee5ab17cace2483bdd15e3355ae3ae76add79c0723fd044411fbd38c1",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/modules/quantize.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/modules/style_encoder.py",
+          "size": 3175,
+          "sha256": "09393840d3e9a6658bea72c532f02fd257e77446d151d0e19ab2c0bf8df3d85b",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/modules/style_encoder.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/modules/wavenet.py",
+          "size": 7203,
+          "sha256": "b5c7d8e9dc493d0c4bf01106fa601650eafd6f1ababd39e71d25531ecc1c5139",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/modules/wavenet.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/facodec/optimizer.py",
+          "size": 3196,
+          "sha256": "601fed5775da9a45028815bd21d24c229ce3e35070edcec12ee291845027d82b",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/facodec/optimizer.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/kmeans/repcodec_model.py",
+          "size": 6586,
+          "sha256": "b7cfa81d6f0868eb0d0b933a404f7ea6eff820f24fdb9b6a151c488d2974916e",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/kmeans/repcodec_model.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/kmeans/vocos.py",
+          "size": 30346,
+          "sha256": "635cf8930ab78fd78afeee50c6751094b00a548d2249083cf38a02a8f56b4bfc",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/kmeans/vocos.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/melvqgan/melspec.py",
+          "size": 2788,
+          "sha256": "eeacccf417f1da152a1b36e5ff9672a24b556345061c5c6769cee8caf8a45964",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/melvqgan/melspec.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/ns3_codec/__init__.py",
+          "size": 180,
+          "sha256": "6b86c557f111bb6c0c1c43fe77bf34ac16ad973411d652fda63449f112cb24c5",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/ns3_codec/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/ns3_codec/alias_free_torch/__init__.py",
+          "size": 157,
+          "sha256": "7e8bdb5ab07a79de67d1490600964f60b0a995c6691217f4fcfb76e175a0b79a",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/ns3_codec/alias_free_torch/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/ns3_codec/alias_free_torch/act.py",
+          "size": 782,
+          "sha256": "2add4414a8dec8b5ffe55e55dc26c17aeba31224b5a5fb3959cc82804454b558",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/ns3_codec/alias_free_torch/act.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/ns3_codec/alias_free_torch/filter.py",
+          "size": 3244,
+          "sha256": "674e5fafffd4bc46b58a7de3590b3bc6c2228930e70b50f4ceea014367438dce",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/ns3_codec/alias_free_torch/filter.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/ns3_codec/alias_free_torch/resample.py",
+          "size": 1788,
+          "sha256": "9341fe6756d3c8222ecbd4155366ee12aefab8c98ab0cd9badc34a0c6d7eb755",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/ns3_codec/alias_free_torch/resample.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/ns3_codec/facodec.py",
+          "size": 41051,
+          "sha256": "086962bbe3b0913491bf1d5874b9005afc8f3a6b7f2707f385e5711f0df84140",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/ns3_codec/facodec.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/ns3_codec/gradient_reversal.py",
+          "size": 859,
+          "sha256": "8d727bbb012ee5275ad4c823ac747a86db88a69faf393b04b9a46c7408c85ebf",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/ns3_codec/gradient_reversal.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/ns3_codec/melspec.py",
+          "size": 2619,
+          "sha256": "6a14da2a4d531f1e8fdb3f83398bfb80c379f5fa41162a28742d6b9dd31b0c3f",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/ns3_codec/melspec.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/ns3_codec/quantize/__init__.py",
+          "size": 195,
+          "sha256": "69964f5c0ecf93a00b2b4767cc2952cad19e7eebbc7bbd154214c01fc34c2943",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/ns3_codec/quantize/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/ns3_codec/quantize/fvq.py",
+          "size": 3876,
+          "sha256": "40a1efbbcedd5b09fff3db1d91d831114dba49a63d4f58215892d3fe5dbf1c10",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/ns3_codec/quantize/fvq.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/ns3_codec/quantize/rvq.py",
+          "size": 3007,
+          "sha256": "e761c3b3f6130e91546830ff4308111ebd23a9e9a7c7443204a358399d98cfd4",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/ns3_codec/quantize/rvq.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/ns3_codec/transformer.py",
+          "size": 7176,
+          "sha256": "1cf20b2262cd3dd754b4884f9a134ced9b0ce416332382c00e75b41ef6401f12",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/ns3_codec/transformer.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/speechtokenizer/model.py",
+          "size": 5954,
+          "sha256": "586a88ebe841655aa0408fb25bb5cc0c0fa48d5dcfadd68e8cb0df74b8b4446a",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/speechtokenizer/model.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/speechtokenizer/modules/__init__.py",
+          "size": 707,
+          "sha256": "ba6c34549d9e1a64c13ff0f85f68b0e52674f484079493cc421b514de6b59071",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/speechtokenizer/modules/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/speechtokenizer/modules/conv.py",
+          "size": 11450,
+          "sha256": "840d60db0415c0ef7463b94afd157c3b8cd9f9a374dd71678df1a111f6e52310",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/speechtokenizer/modules/conv.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/speechtokenizer/modules/lstm.py",
+          "size": 1253,
+          "sha256": "c20bd17cfe9785f6acf93774ffc2cac9ebbccb6613e68012963eda5fea3cc9c1",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/speechtokenizer/modules/lstm.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/speechtokenizer/modules/norm.py",
+          "size": 1093,
+          "sha256": "c9a1ab96484548f86e127cc6041b598659c36e66b642eb5896073810ce074b5a",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/speechtokenizer/modules/norm.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/speechtokenizer/modules/quantization/__init__.py",
+          "size": 506,
+          "sha256": "e75c4cd7c9041b5566b3f330df3650d3175aee9bf26551b05bbc3a21f4001df8",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/speechtokenizer/modules/quantization/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/speechtokenizer/modules/quantization/ac.py",
+          "size": 13300,
+          "sha256": "b5fcc74a817a2553f92660ecaefb2c4f8ec62ce8594d84bcbe100753f0afa077",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/speechtokenizer/modules/quantization/ac.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/speechtokenizer/modules/quantization/core_vq.py",
+          "size": 13748,
+          "sha256": "944c577dda96c2990307f35602595cafa69e08b0b5b9ef7c31136a0689c04e4b",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/speechtokenizer/modules/quantization/core_vq.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/speechtokenizer/modules/quantization/distrib.py",
+          "size": 4403,
+          "sha256": "f6be937422520222f5bc563875a26ca45bc7873f99f16a5fbc2bdfd5221ce438",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/speechtokenizer/modules/quantization/distrib.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/speechtokenizer/modules/quantization/vq.py",
+          "size": 4733,
+          "sha256": "fd5d7a3bbfa3f4f98f16ac37675d4ae4600e26c778fb31c81f840f145a164e79",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/speechtokenizer/modules/quantization/vq.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/speechtokenizer/modules/seanet.py",
+          "size": 14965,
+          "sha256": "6c8438f86391da84a8b84788b72649afa012ff622dd0feba97e3607aa8d28cc2",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/speechtokenizer/modules/seanet.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/codec/vevo/vevo_repcodec.py",
+          "size": 17820,
+          "sha256": "2cda2713146b08b4b7c2674b3535c9d8b42912c509c58024b077b34ef47da8b0",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/codec/vevo/vevo_repcodec.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/tts/maskgct/llama_nar.py",
+          "size": 23130,
+          "sha256": "346897dfb95e04f9845899c744ccc462570277ba071db48f0712bbcf2319e007",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/tts/maskgct/llama_nar.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct/models/tts/maskgct/maskgct_s2a.py",
+          "size": 17700,
+          "sha256": "0e8ad5f5d14705b821c27a6b42b4b0581238ed43636c94cf250cf480e903c2e9",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct/models/tts/maskgct/maskgct_s2a.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/maskgct_utils.py",
+          "size": 8317,
+          "sha256": "955fd7d99033d8710bf6bb9f024ffbb0bff39211f784701bf4c243140ba1906e",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/maskgct_utils.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/model_download.py",
+          "size": 11008,
+          "sha256": "705c7549b344dd00b591b8733c0766768a0b0f30c172c3246ccb519077c5797c",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/model_download.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/nemo_tn.py",
+          "size": 8863,
+          "sha256": "d47a854325e7389f6bcb57b848e1e0b6af4339902601313679a3bc597291f429",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/nemo_tn.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/network_detection.py",
+          "size": 2750,
+          "sha256": "4f142ff06a936c7621578dd5b6b6cdc5669296bbd5fc4a005ef4ce0370613eea",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/network_detection.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/presets.py",
+          "size": 4351,
+          "sha256": "f4a8718063328d5036f52e1a1b53faa42cc5a6431a883269e6a3dad0b4dc07dd",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/presets.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/text_utils.py",
+          "size": 1145,
+          "sha256": "58aabfa4475f5f1513be48ce90f32d36de5641e78f5d0fe015d397f7a1b7c402",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/text_utils.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/tokenizer.py",
+          "size": 16599,
+          "sha256": "9915db3dabcf530005c8920c34e9851b405b638a17751062769e65a32b101f2d",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/tokenizer.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/typical_sampling.py",
+          "size": 1623,
+          "sha256": "9dab0d7e66cdc787471156550bf2959a269335e179dc551a2146cabd5b8441c8",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/typical_sampling.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/utils.py",
+          "size": 3139,
+          "sha256": "464fa5c53ddef16bdcb4bab36b7eb1c2265dbd88920af24156176c849ab59807",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/utils.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/webui_utils.py",
+          "size": 1662,
+          "sha256": "700093d3cdc39051661566d7a2fa33b7cd53326c5906bc17a05ef6f4d77bdb58",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/webui_utils.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/utils/xtransformers.py",
+          "size": 41986,
+          "sha256": "676c0a54e3631db132d842ba8a801ac49c9eb4768fdeb53af4d6a2fa44731924",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/utils/xtransformers.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/vqvae/__init__.py",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/vqvae/__init__.py"
+        },
+        {
+          "path": "source/IndexTTS/indextts/vqvae/xtts_dvae.py",
+          "size": 14979,
+          "sha256": "ad26a9fda591357f02a031a9f20643ae5ad556ccfc57a581a2f1cb7a4134612c",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/indextts/vqvae/xtts_dvae.py"
+        }
+      ],
+      "device_hint": "建议独立显卡 · CPU 可用但较慢",
+      "min_ram_mb": 16384,
+      "runtime": "speech-pytorch",
+      "code_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "import_paths": [
+        "source/IndexTTS"
+      ],
+      "weights_path": "weights"
+    },
+    {
+      "id": "project-bge-small-zh-v1.5",
+      "name": "项目资料 BGE Small 中文 · 独立实例",
+      "kind": "embedding",
+      "version": "75c43b069aac4d13",
+      "source": "https://huggingface.co/Xenova/bge-small-zh-v1.5/resolve/75c43b069aac4d136ba6bc1122f995fedcfd2781/",
+      "license": "MIT",
+      "builtin_path": "models/bge-small-zh-v1.5",
+      "device_hint": "CPU",
+      "min_ram_mb": 1024,
+      "files": [
+        {
+          "path": "model.onnx",
+          "sha256": "15b717c382bcb518ba457b93ea6850ede7f4f1cd8937454aa06972366cd19bcc",
+          "size": 24010842,
+          "url": "https://huggingface.co/Xenova/bge-small-zh-v1.5/resolve/75c43b069aac4d136ba6bc1122f995fedcfd2781/onnx/model_quantized.onnx"
+        },
+        {
+          "path": "tokenizer.json",
+          "sha256": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+          "size": 439125,
+          "url": "https://huggingface.co/Xenova/bge-small-zh-v1.5/resolve/75c43b069aac4d136ba6bc1122f995fedcfd2781/tokenizer.json"
+        },
+        {
+          "path": "manifest.json",
+          "sha256": "88282e10bc9a11b6fa8353bfbaaf5115488365770250d149d4cefda6aded061b",
+          "size": 713,
+          "inline": "{\r\n  \"model\": \"BAAI/bge-small-zh-v1.5\",\r\n  \"onnx_repository\": \"Xenova/bge-small-zh-v1.5\",\r\n  \"revision\": \"75c43b069aac4d136ba6bc1122f995fedcfd2781\",\r\n  \"dimensions\": 512,\r\n  \"pooling\": \"cls\",\r\n  \"normalize\": true,\r\n  \"quantized\": true,\r\n  \"files\": {\r\n    \"model.onnx\": \"15b717c382bcb518ba457b93ea6850ede7f4f1cd8937454aa06972366cd19bcc\",\r\n    \"tokenizer.json\": \"48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26\",\r\n    \"config.json\": \"d4193ead3a810fd694fa8a31d7fc72fbaebc0668b603e398734bf2f6538ff42f\",\r\n    \"MODEL_CARD.md\": \"cb22054df1a98f7ee9d5b281d023e67c27cc316e1733baf03fc994d95c3048ab\"\r\n  },\r\n  \"license\": \"MIT\",\r\n  \"query_prefix\": \"为这个句子生成表示以用于检索相关文章：\"\r\n}"
+        },
+        {
+          "path": "config.json",
+          "sha256": "d4193ead3a810fd694fa8a31d7fc72fbaebc0668b603e398734bf2f6538ff42f",
+          "size": 716,
+          "inline": "{\n  \"_name_or_path\": \"BAAI/bge-small-zh-v1.5\",\n  \"architectures\": [\n    \"BertModel\"\n  ],\n  \"attention_probs_dropout_prob\": 0.1,\n  \"classifier_dropout\": null,\n  \"gradient_checkpointing\": false,\n  \"hidden_act\": \"gelu\",\n  \"hidden_dropout_prob\": 0.1,\n  \"hidden_size\": 512,\n  \"id2label\": {\n    \"0\": \"LABEL_0\"\n  },\n  \"initializer_range\": 0.02,\n  \"intermediate_size\": 2048,\n  \"label2id\": {\n    \"LABEL_0\": 0\n  },\n  \"layer_norm_eps\": 1e-12,\n  \"max_position_embeddings\": 512,\n  \"model_type\": \"bert\",\n  \"num_attention_heads\": 8,\n  \"num_hidden_layers\": 4,\n  \"pad_token_id\": 0,\n  \"position_embedding_type\": \"absolute\",\n  \"transformers_version\": \"4.34.0.dev0\",\n  \"type_vocab_size\": 2,\n  \"use_cache\": true,\n  \"vocab_size\": 21128\n}\n"
+        },
+        {
+          "path": "MODEL_CARD.md",
+          "sha256": "cb22054df1a98f7ee9d5b281d023e67c27cc316e1733baf03fc994d95c3048ab",
+          "size": 1057,
+          "inline": "---\nbase_model: BAAI/bge-small-zh-v1.5\nlibrary_name: transformers.js\n---\n\nhttps://huggingface.co/BAAI/bge-small-zh-v1.5 with ONNX weights to be compatible with Transformers.js.\n\n## Usage (Transformers.js)\n\nIf you haven't already, you can install the [Transformers.js](https://huggingface.co/docs/transformers.js) JavaScript library from [NPM](https://www.npmjs.com/package/@huggingface/transformers) using:\n```bash\nnpm i @huggingface/transformers\n```\n\n**Example:** Run feature extraction.\n\n```js\nimport { pipeline } from '@huggingface/transformers';\n\nconst extractor = await pipeline('feature-extraction', 'Xenova/bge-small-zh-v1.5');\nconst output = await extractor('This is a simple test.');\n```\n\nNote: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using [🤗 Optimum](https://huggingface.co/docs/optimum/index) and structuring your repo like this one (with ONNX weights located in a subfolder named `onnx`)."
+        }
+      ]
+    },
+    {
+      "id": "project-qwen3-embedding-0.6b",
+      "name": "项目资料 Qwen3 Embedding 0.6B · 可选升级",
+      "kind": "embedding",
+      "version": "97b0c614be4d77ee",
+      "source": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/tree/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "license": "Apache-2.0",
+      "runtime": "speech-pytorch",
+      "device_hint": "CPU · 1024维独立实例",
+      "min_ram_mb": 8192,
+      "files": [
+        {
+          "path": "README.md",
+          "size": 17237,
+          "sha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3",
+          "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md"
+        },
+        {
+          "path": "config.json",
+          "size": 727,
+          "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+          "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/config.json"
+        },
+        {
+          "path": "merges.txt",
+          "size": 1671853,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+          "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/merges.txt"
+        },
+        {
+          "path": "model.safetensors",
+          "size": 1191586416,
+          "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+          "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/model.safetensors"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 11423705,
+          "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/tokenizer.json"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 9706,
+          "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+          "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/tokenizer_config.json"
+        },
+        {
+          "path": "vocab.json",
+          "size": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/vocab.json"
+        }
+      ]
+    }
+  ],
+  "runtime": {
+    "version": "pytorch-2.8-cu128-py311-v2",
+    "python_version": "3.11.16",
+    "bootstrap": {
+      "path": "uv.zip",
+      "url": "https://github.com/astral-sh/uv/releases/download/0.12.19/uv-x86_64-pc-windows-msvc.zip",
+      "sha256": "6dbb02d79e419522f1c500f0adb1cddcff0cda7d59b0d66ea7f5e3b4a1b2f5f0",
+      "size": 17955780
+    },
+    "requirements_sha256": "6d7f316e2dceee2158f50b5a4872b2ae8660d02715bceaf86d891e22fc627295",
+    "extra_archives": [
+      {
+        "path": "cmudict.zip",
+        "url": "https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/cmudict.zip",
+        "sha256": "d07cca47fd72ad32ea9d8ad1219f85301eeaf4568f8b6b73747506a71fb5afd6",
+        "size": 896069,
+        "destination": "nltk_data/corpora"
+      },
+      {
+        "path": "averaged_perceptron_tagger.zip",
+        "url": "https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/taggers/averaged_perceptron_tagger.zip",
+        "sha256": "e1f13cf2532daadfd6f3bc481a49859f0b8ea6432ccdcd83e6a49a5f19008de9",
+        "size": 2526731,
+        "destination": "nltk_data/taggers"
+      },
+      {
+        "path": "averaged_perceptron_tagger_eng.zip",
+        "url": "https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/taggers/averaged_perceptron_tagger_eng.zip",
+        "sha256": "6025f530624335c67d6547d44757b357b4e79bae030a0383e9887a92c1718f0b",
+        "size": 1539115,
+        "destination": "nltk_data/taggers"
+      }
+    ],
+    "note": "CUDA 12.8 轮子同时支持 CPU；下载与展开体积另计，首次按需安装"
+  },
+  "history": {}
+}

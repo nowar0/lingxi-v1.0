@@ -1,0 +1,38 @@
+.work-context-trigger { display: inline-flex; align-items: center; gap: 5px; min-height: 24px; padding: 0 5px; border-radius: 5px; color: inherit; font: inherit; cursor: pointer; }
+.work-context-trigger:hover { color: var(--foreground); background: var(--secondary); }
+.work-context-trigger:focus-visible, .work-context-popover button:focus-visible, .work-context-popover summary:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.work-context-trigger:disabled { cursor: default; opacity: .6; }
+.work-context-trigger svg { width: 16px; height: 16px; fill: none; stroke: var(--border); stroke-width: 2; transform: rotate(-90deg); }
+.work-context-trigger .work-context-ring { stroke: currentColor; }
+.work-context-popover { position: fixed; z-index: 65; width: min(380px, calc(100vw - 24px)); overflow: auto; padding: 18px 20px; border: 1px solid color-mix(in srgb, var(--border) 70%, transparent); border-radius: 20px; background: color-mix(in srgb, var(--popover) 84%, transparent); backdrop-filter: blur(20px); color: var(--foreground); box-shadow: 0 8px 28px color-mix(in srgb, var(--foreground) 10%, transparent); font-family: inherit; font-size: 12px; font-variant-numeric: tabular-nums; outline: none; }
+.work-context-heading { display: flex; align-items: center; gap: 6px; }
+.work-context-heading h2 { margin-right: auto; font-size: 13px; font-weight: 600; }
+.work-context-heading button { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 5px; }
+.work-context-heading button:hover { background: var(--secondary); }
+.work-context-heading button:disabled { opacity: .5; }
+.work-context-heading svg { width: 14px; height: 14px; }
+.work-context-popover > p, .work-context-note { margin-top: 8px; color: color-mix(in srgb, var(--foreground) 75%, var(--popover)); line-height: 1.7; }
+.work-context-summary { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 6px 12px; margin-top: 18px; }
+.work-context-summary strong { margin-left: 5px; font-size: 14px; font-weight: 550; }
+.work-context-bar { display: flex; height: 5px; margin: 12px 0 16px; border-radius: 3px; overflow: hidden; background: var(--secondary); }
+.work-context-bar i { display: block; flex-shrink: 0; height: 100%; }
+.work-context-popover .is-segment-0 { background: color-mix(in srgb, var(--foreground) 80%, var(--card)); }
+.work-context-popover .is-segment-1 { background: color-mix(in srgb, var(--foreground) 50%, var(--card)); }
+.work-context-popover .is-segment-2 { background: color-mix(in srgb, var(--foreground) 25%, var(--card)); }
+.work-context-breakdown { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.work-context-breakdown dt { display: flex; align-items: center; gap: 8px; }
+.work-context-breakdown dt i { width: 9px; height: 9px; border-radius: 2px; flex-shrink: 0; }
+.work-context-popover dl > div { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; }
+.work-context-popover dd { text-align: right; }
+.work-context-popover details { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+.work-context-popover summary { cursor: pointer; min-height: 24px; }
+.work-context-popover pre { margin-top: 8px; padding: 8px; white-space: pre-wrap; overflow-wrap: anywhere; background: var(--secondary); border-radius: 6px; font-family: inherit; font-size: 11px; line-height: 1.7; max-height: 230px; overflow: auto; }
+.work-context-message { margin-top: 10px; }
+.work-context-message > span { color: var(--muted-foreground); }
+.work-context-retry { margin-top: 8px; padding: 4px 0; color: var(--primary); }
+@media (prefers-reduced-transparency: reduce) { .work-context-popover { background: var(--popover); backdrop-filter: none; } }
+
+.work-context-popover.is-compact { width:min(340px,calc(100vw - 24px));padding:18px 20px;border-radius:20px; }
+.work-context-popover.is-compact .work-context-summary { margin-top:0;font-size:13px;gap:6px; }
+.work-context-popover.is-compact .work-context-breakdown { margin:0;padding:0;border:0;font-size:13px; }
+.work-context-popover.is-compact .work-context-bar { margin:16px 0; }

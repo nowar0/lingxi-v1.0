@@ -1,0 +1,2 @@
+# Stage-one optional runtime. Provision explicitly; no runtime pip installation.
+agno==3.1.12

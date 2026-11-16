@@ -1,0 +1,51 @@
+/* One upper command row; rounded tabs sit between the retained separators. */
+.workspace-page{background:var(--background)}
+.workspace-body{margin:6px 6px 2px;overflow:hidden;border-radius:20px;background:var(--card)}
+.workspace-page .workspace-toolbar{border-bottom:1px solid var(--border);border-radius:20px 20px 0 0;min-height:50px;padding:6px 12px}
+.workspace-page .workspace-toolbar::after{display:none}
+.workspace-unified-pane-actions{display:flex;align-items:center;gap:4px}
+.workspace-toolbar-actions>button,.workspace-toolbar-actions .workspace-unified-pane-actions>button{border-radius:12px}
+.workspace-dock{grid-template-rows:52px minmax(0,1fr)}
+.workspace-page .workspace-tabbar{height:52px;padding:7px 10px;gap:8px;background:var(--card);border-bottom:1px solid var(--border)}
+.workspace-page .workspace-tablist{align-items:center;gap:6px;overflow-x:auto}
+.workspace-page .workspace-tab{height:36px;border:1px solid transparent;border-radius:12px;padding-right:5px}
+.workspace-page .workspace-tab.is-active{border-color:var(--border);background:var(--card)}
+.workspace-page .workspace-tab.is-active::after{display:none}
+.workspace-page .workspace-tab-trigger{max-width:220px;padding-left:10px;border-radius:12px}
+.workspace-page .workspace-tab-close,.workspace-page .workspace-tab-menu{border-radius:8px}
+.workspace-page .workspace-start-actions>button{border-radius:14px}
+.workspace-page .workspace-composer-project .work-project-picker-trigger{border-radius:9px}
+.workspace-page .work-composer{border-radius:26px}
+.workspace-page .work-composer-wrap{padding-bottom:2px}
+.workspace-page .workspace-compose-area{padding-bottom:0}
+.workspace-page .work-composer-wrap>.work-composer-status.work-stats-strip{padding-top:4px;gap:7px}
+.workspace-page .work-stat-pill{min-height:21px;line-height:18px}
+.workspace-page .workspace-side-chat .work-composer-wrap{padding-bottom:4px}
+.workspace-page .workspace-side-chat .work-composer{border-radius:24px}
+.workspace-page .work-session-rail .workspace-session,.workspace-page .work-project-heading{border-radius:11px}
+.workspace-page .work-session-rail .workspace-new-session{border-radius:12px}
+.workspace-page .workspace-tree-row{border-radius:9px}
+.workspace-page .workspace-panel-error,.workspace-page .workspace-editor-search,.workspace-page .workspace-file-search{border-radius:12px}
+.workspace-page .workspace-file-toolbar{padding:10px 14px}
+.side-history-hidden{display:none}
+.workspace-page .work-session-rail{position:relative;flex-shrink:0;width:var(--work-rail-width,236px);min-width:0;border:0;border-radius:18px;overflow:hidden;margin:6px 0 2px 4px}
+.workspace-page .work-session-rail.is-present{display:flex}
+.work-rail-content{display:flex;flex-direction:column;width:var(--work-rail-expanded-width,236px);min-width:var(--work-rail-expanded-width,236px);height:100%;min-height:0}
+.work-rail-resize{position:absolute;right:0;top:0;bottom:0;width:7px;cursor:col-resize;touch-action:none;z-index:20}
+.work-rail-resize::after{content:'';position:absolute;right:1px;top:8px;bottom:8px;width:1px;background:transparent}
+.work-rail-resize:hover::after,.work-rail-resize:focus-visible::after,.work-session-rail.is-resizing .work-rail-resize::after{background:var(--muted-foreground)}
+.work-session-rail.is-resizing,.work-session-rail.is-resizing *{user-select:none;cursor:col-resize!important}
+.dock-drop-overlay{inset:52px 0 0;gap:0}
+.dock-drop-target{background:color-mix(in srgb,var(--card) 82%,transparent);border-radius:16px}
+.dock-drop-target.is-target{background:color-mix(in srgb,var(--foreground) 7%,var(--card))}
+.workspace-drag-card{width:min(350px,calc(100% - 24px));border:1px solid var(--border);border-radius:16px;background:var(--card);box-shadow:0 12px 32px #00000014;overflow:hidden}
+.workspace-drag-card>header{display:flex;align-items:center;gap:9px;min-height:40px;padding:9px 14px;border-bottom:1px solid var(--border);font-size:13px}
+.workspace-drag-card>header span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.workspace-drag-card>div{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:12px;font-size:14px;background:var(--secondary)}
+@media(max-width:1199px){.workspace-page .work-session-rail{position:absolute;top:0;bottom:0;left:0;z-index:15;background:var(--card)}.workspace-body{margin-left:4px}}
+@media(prefers-reduced-motion:reduce){.workspace-page *{scroll-behavior:auto!important}}
+
+.dock-drop-target:not(.is-target) .workspace-drag-card{visibility:hidden}
+
+.workspace-page .workspace-tab-trigger{user-select:none;cursor:grab}
+.workspace-page .workspace-tab-trigger:active{cursor:grabbing}

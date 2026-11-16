@@ -1,0 +1,8 @@
+.lingxi-select{display:inline-flex;align-items:center;justify-content:space-between;gap:10px;min-width:0;min-height:34px;padding:7px 12px;border:1px solid var(--border);border-radius:12px;background:var(--card);color:var(--foreground);font:inherit;text-align:left;cursor:pointer}
+.lingxi-select>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lingxi-select>svg{width:15px;height:15px;flex-shrink:0;color:var(--muted-foreground)}
+.lingxi-select:disabled{opacity:.5;cursor:default}.lingxi-select:focus-visible{outline:1px solid var(--foreground);outline-offset:2px}
+.lingxi-select-menu{z-index:100;min-width:var(--radix-dropdown-menu-trigger-width);max-width:min(420px,calc(100vw - 24px));max-height:min(320px,var(--radix-dropdown-menu-content-available-height));overflow:auto;padding:5px;border:1px solid var(--border);border-radius:14px;background:var(--popover);color:var(--foreground);box-shadow:0 8px 24px #00000014;outline:none}
+.lingxi-select-option{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:34px;padding:7px 10px;border-radius:9px;outline:none;font-size:13px;line-height:1.5;cursor:default}
+.lingxi-select-option[data-highlighted],.lingxi-select-option[data-state=checked]{background:var(--secondary)}
+.lingxi-select-option[data-disabled]{opacity:.45;pointer-events:none}.lingxi-select-option svg{width:14px;height:14px;flex-shrink:0}

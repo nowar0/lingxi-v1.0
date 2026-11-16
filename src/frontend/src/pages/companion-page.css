@@ -1,0 +1,65 @@
+.chat-page.companion-message-page { gap: 12px; padding: 12px 14px; }
+.companion-message-page .companion-chat-panel { border: 1px solid color-mix(in srgb, var(--border) 85%, transparent); border-radius: var(--radius); background: color-mix(in srgb, var(--card) 82%, transparent); overflow: hidden; }
+.companion-message-page .companion-chat-header { flex: 0 0 auto; min-height: 64px; gap: 10px; padding: 12px 16px; background: transparent; }
+.companion-chat-heading { flex: 1; min-width: 0; }
+.companion-chat-heading > div { display: flex; min-width: 0; align-items: center; gap: 10px; }
+.companion-chat-heading h1 { min-width: 0; flex: 0 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; font-weight: 600; line-height: 22px; }
+.companion-conversation-name { overflow: hidden; max-width: 220px; border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; color: var(--muted-foreground); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.companion-chat-heading > p { overflow: hidden; margin: 4px 0 0; color: color-mix(in srgb, var(--foreground) 70%, var(--card)); font-size: 11px; line-height: 18px; text-overflow: ellipsis; white-space: nowrap; }
+.companion-chat-header-actions { display: flex; align-items: center; gap: 2px; }
+.companion-message-page .message-scroll { scroll-behavior: auto; }
+.companion-message-page .message-column { max-width: 1080px; }
+.companion-message-page .context-rail.companion-context-rail { height: 100%; padding: 0; border: 0; background: transparent; }
+.companion-message-page .companion-module-schedule { flex: 0 1 240px; }
+.companion-message-page .companion-composer-wrap { width: 100%; max-width: 1080px; padding: 8px 22px 12px; }
+.companion-composer { padding: 12px 14px 10px; }
+.companion-composer > textarea { min-height: 68px; max-height: 160px; padding: 2px 4px 10px; font-size: 13px; line-height: 22px; }
+.companion-composer-toolbar { display: flex; align-items: center; gap: 8px; }
+.companion-composer-toolbar .companion-plus-button { width: 32px; height: 32px; background: var(--secondary); }
+.companion-plus-button > svg { transition: transform 180ms var(--ease-out); }
+.companion-plus-button > svg.is-open { transform: rotate(45deg); }
+.companion-composer-state { display: flex; flex: 1; align-items: center; gap: 6px; font-size: 11px; color: color-mix(in srgb, var(--foreground) 70%, var(--card)); }
+.companion-send-actions { display: flex; align-items: center; gap: 6px; margin-left: auto; }
+.companion-send-actions > button { width: 34px; height: 34px; border-radius: calc(var(--radius) * .72); }
+.companion-send-actions .companion-send-button { box-shadow: none; }
+.companion-send-actions .companion-send-button > svg { width: 17px; height: 17px; }
+.companion-tools-drawer { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows 180ms var(--ease-out), opacity 160ms ease; }
+.companion-tools-drawer.is-open { grid-template-rows: 1fr; opacity: 1; }
+.companion-tools-clip { min-height: 0; overflow: hidden; }
+.companion-tools-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; border-top: 1px solid var(--border); padding-top: 10px; }
+.companion-tools-grid > button { height: auto; min-height: 52px; flex-direction: column; gap: 6px; background: var(--secondary); padding: 10px 6px; font-size: 11px; }
+.companion-attachment { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; border-radius: 8px; background: var(--secondary); padding: 4px 8px; font-size: 11px; }
+.companion-attachment > span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 1280px) {
+  .companion-message-page { position: relative; }
+  .companion-context-toggle { display: inline-flex; }
+  .companion-message-page .context-rail.companion-context-rail {
+    position: absolute;
+    z-index: 20;
+    top: 70px;
+    right: 14px;
+    bottom: 12px;
+    display: flex;
+    height: auto;
+    width: min(280px, calc(100% - 28px));
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--card);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .12);
+  }
+}
+@media (max-width: 720px) { .chat-page.companion-message-page { padding: 8px; } .companion-message-page .companion-chat-header { gap: 6px; padding-inline: 10px; } .companion-conversation-name { display: none; } .companion-message-page .companion-composer-wrap { padding-inline: 12px; } }
+@media (max-width: 420px) { .companion-chat-heading h1 { font-size: 12px; } .companion-chat-header-actions { gap: 0; } .companion-chat-header-actions > button { width: 28px; } }
+@media (prefers-reduced-motion: reduce) { .companion-tools-drawer, .companion-plus-button > svg { transition: none; } }
+.reduce-motion .companion-tools-drawer, .reduce-motion .companion-plus-button > svg { transition: none; }
+
+/* Keep the three rail modules as separate cards beside the main message panel. */
+.companion-message-page .context-rail.companion-context-rail { gap:12px; padding:0; border:0; background:transparent; overflow-y:auto; }
+.companion-message-page .companion-module { border:1px solid color-mix(in srgb,var(--border) 85%,transparent); border-radius:var(--radius); background:color-mix(in srgb,var(--card) 82%,transparent); box-shadow:none; }
+
+/* Keep character and schedule readable; the activity section takes remaining height. */
+.companion-message-page .companion-module-activity { flex: 1 1 0; min-height: 72px; max-height: none; }
+.companion-message-page .companion-module-character { flex: 0 0 300px; max-height: none; }
+.companion-message-page .companion-module-schedule { flex: 0 0 220px; min-height: 0; }

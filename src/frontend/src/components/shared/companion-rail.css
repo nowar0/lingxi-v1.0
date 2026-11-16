@@ -1,0 +1,67 @@
+/* The message rail keeps the app's theme tokens and glass surface. 280 = 12 + 256 + 12. */
+.context-rail.companion-context-rail { position: relative; display: flex; width: 280px; min-width: 280px; height: 100%; min-height: 0; flex-direction: column; gap: 12px; padding: 12px; overflow: clip; overscroll-behavior: none; }
+.companion-module { position: relative; display: flex; min-width: 0; min-height: 0; flex-direction: column; overflow: hidden; color: var(--foreground); border-color: color-mix(in srgb, var(--border) 85%, transparent); box-shadow: none; }
+.companion-module:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
+.companion-module-character { flex: 0 0 clamp(220px, 38vh, 344px); max-height: 45%; }
+.companion-module-schedule { flex: 1 1 0; }
+.companion-module-activity { flex: 0 0 clamp(108px, 16vh, 148px); max-height: 24%; }
+.companion-module-body { min-height: 0; flex: 1 1 auto; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: auto; }
+.companion-schedule-body { display: flex; flex-direction: column; }
+.companion-schedule-body > * { flex-shrink: 0; }
+.companion-schedule-body > .companion-rail-empty { flex: 1 0 76px; }
+.companion-module h2 { margin: 0; font-size: 13px; line-height: 20px; font-weight: 600; }
+.companion-character-body { display: flex; flex-direction: column; overflow: clip; }
+.companion-character-body > .companion-character-art { flex: 1 1 0; min-height: 0; height: auto; }
+.companion-character-body > .companion-character-copy { flex: 0 0 auto; }
+.companion-character-art { position: relative; height: clamp(144px, 25vh, 216px); overflow: hidden; background: var(--secondary); }
+.companion-character-art > img { width: 100%; height: 100%; object-fit: cover; object-position: center top; user-select: none; }
+.companion-character-copy { padding: 13px 14px 14px; }
+.companion-character-copy h2 { font-size: 15px; line-height: 22px; }
+.companion-character-copy > p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 18px; margin: 5px 0 12px; color: color-mix(in srgb, var(--foreground) 70%, var(--card)); font-size: 11px; line-height: 18px; }
+.companion-character-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; border-top: 1px solid var(--border); padding-top: 10px; }
+.companion-character-actions > button { min-width: 0; padding-inline: 8px; font-size: 11px; gap: 6px; box-shadow: none; }
+.companion-character-actions > button > svg { width: 14px; height: 14px; }
+.companion-module-header { display: flex; min-height: 44px; flex: 0 0 auto; align-items: center; justify-content: space-between; gap: 4px; padding: 8px 10px 6px 14px; }
+.companion-module-header h2 { display: flex; min-width: 0; align-items: center; gap: 7px; white-space: nowrap; font-size: 12px; }
+.companion-module-header h2 svg { width: 15px; height: 15px; color: color-mix(in srgb, var(--foreground) 75%, var(--card)); }
+.companion-module-actions { display: flex; align-items: center; gap: 2px; }
+.companion-module-actions > button { gap: 3px; font-size: 11px; padding-inline: 6px; box-shadow: none; }
+.companion-module-actions > button.companion-rail-icon { width: 26px; height: 28px; padding: 0; }
+.companion-module-actions > button > svg { width: 13px; height: 13px; }
+.companion-rail-empty { display: grid; min-height: 76px; margin: 0; place-items: center; padding: 12px 16px 20px; color: color-mix(in srgb, var(--foreground) 68%, var(--card)); font-size: 11px; line-height: 18px; text-align: center; }
+.companion-schedule-list { margin: 0; padding: 2px 14px 12px; list-style: none; }
+.companion-schedule-list > li { display: flex; min-height: 36px; align-items: center; gap: 8px; font-size: 12px; }
+.companion-schedule-list > li > span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.companion-schedule-list .is-done { color: color-mix(in srgb, var(--foreground) 65%, var(--card)); text-decoration: line-through; }
+.companion-schedule-list time { flex-shrink: 0; color: color-mix(in srgb, var(--foreground) 68%, var(--card)); font-size: 11px; }
+.companion-schedule-check { display: grid; width: 17px; height: 17px; flex: 0 0 17px; place-items: center; border: 1px solid color-mix(in srgb, var(--foreground) 40%, var(--card)); border-radius: 5px; background: transparent; transition: background-color 140ms ease, border-color 140ms ease; }
+.companion-schedule-check:hover { border-color: var(--primary); }
+.companion-schedule-check:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.companion-schedule-check:disabled { opacity: .5; }
+.companion-schedule-check.is-done { border-color: var(--primary); background: var(--primary); color: var(--primary-foreground); }
+.companion-schedule-check svg { width: 12px; height: 12px; }
+.companion-schedule-form { display: grid; gap: 8px; padding: 6px 14px 12px; }
+.companion-schedule-form input { height: 32px; min-width: 0; font-size: 12px; }
+.companion-schedule-form > div { display: flex; justify-content: flex-end; gap: 6px; }
+.companion-model-status { display: flex; align-items: flex-start; gap: 9px; padding: 5px 14px 0; }
+.companion-model-status strong { font-size: 12px; line-height: 19px; font-weight: 500; }
+.companion-model-status p { margin: 3px 0 0; color: color-mix(in srgb, var(--foreground) 70%, var(--card)); font-size: 11px; line-height: 17px; }
+.companion-model-dot { width: 7px; height: 7px; flex: 0 0 7px; margin-top: 6px; border: 1px solid color-mix(in srgb, var(--foreground) 60%, var(--card)); border-radius: 50%; }
+.companion-model-dot.is-busy { border-color: var(--primary); background: var(--primary); animation: companion-activity-pulse 1.4s ease-in-out infinite; }
+.companion-model-dot.is-failed, .companion-activity-mark.is-failed { border-color: #b95055; background: #b95055; }
+.companion-model-config { display: flex; flex-wrap: wrap; gap: 3px 8px; padding: 5px 14px 8px 30px; color: color-mix(in srgb, var(--foreground) 70%, var(--card)); overflow-wrap: anywhere; font-size: 11px; line-height: 17px; }
+.companion-model-config small { font-size: 11px; }
+.companion-model-foot, .companion-activity-list { margin: 0 14px; border-top: 1px solid var(--border); padding: 9px 0 11px; color: color-mix(in srgb, var(--foreground) 70%, var(--card)); font-size: 11px; line-height: 17px; }
+.companion-activity-list { list-style: none; }
+.companion-activity-list li { display: flex; align-items: center; gap: 6px; min-height: 25px; }
+.companion-activity-list li > span:nth-child(2) { flex: 1; }
+.companion-activity-list time { font-variant-numeric: tabular-nums; }
+.companion-activity-mark { width: 4px; height: 4px; flex-shrink: 0; border-radius: 50%; background: currentColor; opacity: .65; }
+.companion-module.is-rail-dragging { opacity: .25; border-style: dashed; border-color: var(--primary); }
+.companion-rail-ghost { position: fixed; z-index: 100; margin: 0; pointer-events: none; background: var(--card); box-shadow: 0 14px 32px rgba(26,39,58,.16); will-change: transform; }
+body.companion-rail-dragging, body.companion-rail-dragging * { cursor: grabbing !important; user-select: none !important; }
+@keyframes companion-activity-pulse { 50% { opacity: .45; } }
+@media (max-width: 1280px) { .context-rail.companion-context-rail { display: none; } }
+@media (max-height: 760px) { .companion-character-art { height: 144px; } .context-rail.companion-context-rail { gap: 10px; } }
+@media (prefers-reduced-motion: reduce) { .companion-model-dot.is-busy { animation: none; } }
+.reduce-motion .companion-model-dot.is-busy { animation: none; }
